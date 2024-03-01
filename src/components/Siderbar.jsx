@@ -104,7 +104,7 @@ const Siderbar = () => {
     },
   ];
   return (
-    <div className=" w-full h-full my-[64px]">
+    <div className=" w-full h-full my-[70px]">
       {links.map((link, index) => {
         return (
           <NavLink
