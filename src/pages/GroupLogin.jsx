@@ -4,7 +4,7 @@ import { FaRegEyeSlash } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
 
-const AdminLogin = () => {
+const GroupLogin = () => {
   const navigate = useNavigate();
   return (
     <div className=" w-full min-h-screen bg-[#F7F9FC] flex justify-center  items-center mx-auto ">
@@ -18,7 +18,7 @@ const AdminLogin = () => {
       <div className=" h-[476px] w-[456px] ">
         <form className=" bg-white w-full h-full border border-[#D0D5DD] py-[32px] px-[28px] shadow-md rounded-xl ">
           <h1 className=" text-[28px] font-medium text-center">
-            Login in as Admin
+            Log in into Group
           </h1>
           <p className=" text-base text-[#667185] text-center">
             Enter your credentials to access your dashboard
@@ -86,4 +86,4 @@ const AdminLogin = () => {
   );
 };
 
-export default AdminLogin;
+export default GroupLogin;

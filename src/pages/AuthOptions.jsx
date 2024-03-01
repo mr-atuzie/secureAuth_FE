@@ -11,12 +11,12 @@ const AuthOptions = () => {
     {
       head: "Group",
       text: "Sign in into the group to access reports and KPI",
-      link: "/",
+      link: "/group-login",
     },
     {
       head: "Bank",
       text: "Sign in into the group to access reports and KPI",
-      link: "/",
+      link: "/bank-login",
     },
     {
       head: "Socail marketplace",
@@ -57,7 +57,7 @@ const AuthOptions = () => {
 
       <div className=" w-[1386px] mt-10  h-[340px] rounded-t-lg  bg-[#FFEFEA] flex flex-col justify-center items-center mx-auto">
         {/* <img className=" w-full" src={authFooter} alt="" /> */}
-        <h1 className=" text-[#FF6634] text-[30px] font-semibold text-center">
+        <h1 className=" text-[#FF6634] text-[30px] font-semibold text-center leading-none">
           Report and Analytics <br /> Dashbaord
         </h1>
         <p className=" text-[#707070] text-center  text-[14px] w-[420px]">
