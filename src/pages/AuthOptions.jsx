@@ -21,7 +21,7 @@ const AuthOptions = () => {
     {
       head: "Socail marketplace",
       text: "Sign in into the group to access reports and KPI",
-      link: "/social-marketpalce-login",
+      link: "/social-marketplace-login",
     },
     {
       head: "Payment gateway",

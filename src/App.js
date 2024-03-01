@@ -11,13 +11,15 @@ import Dashboard from "./pages/Dashboard";
 import AddUser from "./pages/AddUser";
 import PaymentGatewayLogin from "./pages/PaymentGatewayLogin";
 import SocialMarketLogin from "./pages/SocialMarketLogin";
+import BankLogin from "./pages/BankLogin";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<AuthOptions />}></Route>
+        <Route path="/" element={<AuthOptions />} />
         <Route path="/admin-login" element={<AdminLogin />} />
+        <Route path="/bank-login" element={<BankLogin />} />
         <Route path="/group-login" element={<GroupLogin />} />
         <Route
           path="/payment-gateway-login"
