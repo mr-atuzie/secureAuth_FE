@@ -55,12 +55,12 @@ const AuthOptions = () => {
         <CiLogin size={30} />
       </button>
 
-      <div className=" w-[85%] lg:w-[1386px] mt-10 h-[240px]  lg:h-[340px] rounded-t-lg  bg-[#FFEFEA] flex flex-col justify-center items-center mx-auto">
+      <div className=" w-[95%] px-3 lg:w-[1386px] mt-10 h-[240px]  lg:h-[340px] rounded-t-lg  bg-[#FFEFEA] flex flex-col justify-center items-center mx-auto">
         {/* <img className=" w-full" src={authFooter} alt="" /> */}
         <h1 className=" text-[#FF6634] text-[20px] md:text-[30px] font-semibold text-center leading-none">
           Report and Analytics <br /> Dashbaord
         </h1>
-        <p className=" text-[#707070] text-center text-xs  md:text-[14px] lg:w-[420px]">
+        <p className=" text-[#707070] text-center text-xs mt-1  md:text-[14px] lg:w-[420px]">
           Our comprehensive design system offers you an unparalleled range of
           components, sparking creativity and boosting efficiency
         </p>

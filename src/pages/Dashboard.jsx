@@ -18,6 +18,8 @@ const Dashboard = () => {
             </button>
           </Link>
         </div>
+
+        {/* dasboard card */}
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
             <h3 className=" font-medium tracking-wide text-xs uppercase text-[#71717A]">
@@ -74,6 +76,9 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
+
+        {/* dasboard graph */}
+        <div></div>
       </section>
     </>
   );
