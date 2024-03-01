@@ -8,7 +8,7 @@ const DashboardLayout = () => {
     <div className=" w-full  bg-green-900    ">
       <Header />
       <div className=" flex h-full  bg-[#FAFAFB]   ">
-        <div className=" w-[20%]  h  static left-0 bg-[#FAFAFB]   ">
+        <div className=" hidden w-[20%]  lg:block  static left-0 bg-[#FAFAFB]   ">
           <Siderbar />
         </div>
 
