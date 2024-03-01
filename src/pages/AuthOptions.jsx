@@ -38,7 +38,7 @@ const AuthOptions = () => {
         Our comprehensive design system offers you an unparalleled range of
         components, sparking creativity and boosting efficiency.
       </p>
-      <div className=" grid grid-cols-2 mt-8  gap-5 justify-center">
+      <div className=" grid grid-cols-1 lg:grid-cols-2 mt-8  gap-5 justify-center">
         {options.map((opt, index) => {
           const { head, text, link } = opt;
           return (

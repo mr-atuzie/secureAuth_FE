@@ -13,91 +13,93 @@ import { FaRegCreditCard } from "react-icons/fa";
 import { GrAtm } from "react-icons/gr";
 import { IoMdCard } from "react-icons/io";
 
+const iconSize = 20;
+
 const Siderbar = () => {
   const links = [
     {
       head: "Dashboard",
-      text: <MdOutlineDashboard size={18} />,
+      text: <MdOutlineDashboard size={iconSize} />,
       link: "/dashboard",
     },
     {
       head: "User",
-      text: <FaRegUser size={18} />,
+      text: <FaRegUser size={iconSize} />,
       link: "*",
     },
     {
       head: "Deposit",
-      text: <IoWalletOutline size={18} />,
+      text: <IoWalletOutline size={iconSize} />,
       link: "*",
     },
     {
       head: "NIP",
-      text: <BsBank />,
+      text: <BsBank size={iconSize} />,
       link: "*",
     },
     {
       head: "Transfer",
-      text: <TbArrowsTransferDown size={18} />,
+      text: <TbArrowsTransferDown size={iconSize} />,
       link: "*",
     },
     {
       head: "Withdraw",
-      text: <GrAtm size={18} />,
+      text: <GrAtm size={iconSize} />,
       link: "*",
     },
     {
       head: "Bill payment",
-      text: <CiReceipt size={18} />,
+      text: <CiReceipt size={iconSize} />,
       link: "*",
     },
     {
       head: "Referral",
-      text: <VscReferences size={18} />,
+      text: <VscReferences size={iconSize} />,
       link: "*",
     },
     {
       head: "Commission",
-      text: <MdMoney size={18} />,
+      text: <MdMoney size={iconSize} />,
       link: "*",
     },
     {
       head: "Revenue",
-      text: <LuLineChart size={18} />,
+      text: <LuLineChart size={iconSize} />,
       link: "*",
     },
     {
       head: "Atm card",
-      text: <FaRegCreditCard size={18} />,
+      text: <FaRegCreditCard size={iconSize} />,
       link: "*",
     },
     {
       head: "Payment request",
-      text: <TbCash size={18} />,
+      text: <TbCash size={iconSize} />,
       link: "*",
     },
     {
       head: "Invoicing",
-      text: <LuScrollText size={18} />,
+      text: <LuScrollText size={iconSize} />,
       link: "*",
     },
     {
       head: "Scan and pay",
-      text: <BsQrCodeScan size={18} />,
+      text: <BsQrCodeScan size={iconSize} />,
       link: "*",
     },
     {
       head: "Ussd",
-      text: <MdOutlinePhoneAndroid size={18} />,
+      text: <MdOutlinePhoneAndroid size={iconSize} />,
       link: "*",
     },
     {
       head: "Card payment gateway",
-      text: <IoMdCard size={18} />,
+      text: <IoMdCard size={iconSize} />,
       link: "*",
     },
     {
       head: "Pos terminal",
-      text: <CiCalculator1 size={18} />,
+      text: <CiCalculator1 size={iconSize} />,
       link: "*",
     },
   ];
@@ -110,7 +112,7 @@ const Siderbar = () => {
             to={link.link}
             className={({ isActive }) =>
               isActive
-                ? "  text-[#FF5D2E] rounded  bg-[#FFEFEA] block w-full"
+                ? "  text-[#FF5D2E] rounded font-semibold  bg-[#FFEFEA] block w-full"
                 : " text-[#8C8C8C]"
             }
           >
