@@ -3,6 +3,7 @@ import { TiUserAdd } from "react-icons/ti";
 import { formatter } from "../utils";
 import { BsArrowUp } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { FaRegFilePdf } from "react-icons/fa";
 
 const Dashboard = () => {
   return (
@@ -78,7 +79,7 @@ const Dashboard = () => {
         </div>
 
         {/* dasboard graph */}
-        <div className=" p-3 bg-white w-[797px] h-[328px] mt-8   border border-gray-200 rounded-[10px]">
+        <div className=" hidden lg:block p-3 bg-white w-[797px] h-[328px] mt-8   border border-gray-200 rounded-[10px]">
           <div className=" flex justify-between items-center">
             <h1 className=" text-base font-semibold ">Sales Report</h1>
 
@@ -97,9 +98,9 @@ const Dashboard = () => {
               </button>
             </div>
 
-            <button className=" p-3 border-gray-400 border text-xs font-semibold rounded-[10px]">
-              <TiUserAdd size={20} />
-              Add a user
+            <button className=" p-2 border-gray-400 border flex items-center gap-1 text-xs font-semibold rounded-[10px]">
+              <FaRegFilePdf size={20} />
+              Export PDF
             </button>
           </div>
         </div>

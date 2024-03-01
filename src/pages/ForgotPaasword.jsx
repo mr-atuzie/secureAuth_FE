@@ -8,16 +8,16 @@ const ForgotPaasword = () => {
     <div className=" w-full min-h-screen bg-[#F7F9FC] flex justify-center  items-center mx-auto ">
       <div className=" h-[476px] w-[456px] ">
         <form className=" w-full h-full  py-[32px] px-[28px]  ">
-          <h1 className=" text-[28px] font-medium text-center">
+          <h1 className=" text-[20px] lg:text-[28px] font-medium text-center">
             Forgot Password
           </h1>
-          <p className=" text-base text-[#667185] text-center">
+          <p className=" text-xs lg:text-base text-[#667185] text-center">
             Ouch sorry, you forgot your password. kindly enter your email
             address to get a reset link
           </p>
 
           <div
-            className=" flex flex-col gap-2 mt-10 
+            className=" flex flex-col gap-2 mt-8 lg:mt-10 
           "
           >
             <label
@@ -40,7 +40,7 @@ const ForgotPaasword = () => {
 
           <button
             onClick={() => navigate("/reset-email")}
-            className=" w-full mt-16 px-[24px] rounded-[12px] py-[16px] font-semibold bg-[#FF5D2E]  text-white justify-center items-center flex gap-4"
+            className=" w-full mt-10 lg:mt-16 px-[24px] rounded-[12px] py-[16px] font-semibold bg-[#FF5D2E]  text-white justify-center items-center flex gap-4"
           >
             Send reset Instruction
           </button>

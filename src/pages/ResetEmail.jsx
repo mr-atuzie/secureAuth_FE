@@ -6,14 +6,14 @@ const ResetEmail = () => {
   const navigate = useNavigate();
   return (
     <div className=" w-full min-h-screen bg-[#F7F9FC] flex justify-center flex-col  items-center mx-auto ">
-      <div className=" w-[620px] h-[300px] bg-white shadow-sm flex justify-center items-center flex-col">
+      <div className=" w-[90%] lg:w-[620px] h-[300px] bg-white shadow-sm flex justify-center items-center flex-col">
         <div className=" w-[60px] h-[60px] flex justify-center items-center bg-[#FFEFEA] rounded-full">
           <FaRegEnvelope size={20} className=" text-[#FF5D2E]" />
         </div>
-        <h1 className=" text-[24px] font-medium text-center">
+        <h1 className=" text-[20pz] lg:text-[24px] font-medium text-center">
           Check your email
         </h1>
-        <p className=" w-[340px] text-base text-[#8C8C8C] text-center">
+        <p className=" text-xs lg:w-[340px] lg:text-base text-[#8C8C8C] text-center">
           Reset link has been sent to your mail. Follow the instruction to reset
           your password
         </p>
