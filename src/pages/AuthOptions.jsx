@@ -34,7 +34,7 @@ const AuthOptions = () => {
       <h2 className=" text-[24px] md:text-[30px] lg:text-[40px] font-bold mt-10">
         Choose your sign in option
       </h2>
-      <p className=" text-[#707070] text-center text-xs md:text-base lg:text-[18px]  lg:w-[648px]">
+      <p className="px-2 text-[#707070] text-center text-xs md:text-base lg:text-[18px]  lg:w-[648px]">
         Our comprehensive design system offers you an unparalleled range of
         components, sparking creativity and boosting efficiency.
       </p>
