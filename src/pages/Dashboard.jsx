@@ -2,6 +2,7 @@ import React from "react";
 import { TiUserAdd } from "react-icons/ti";
 import { formatter } from "../utils";
 import { BsArrowUp } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   return (
@@ -10,10 +11,12 @@ const Dashboard = () => {
         <div className=" w-full flex justify-between mb-3">
           <h1 className=" font2 font-semibold ">Hey David Okulola -</h1>
 
-          <button className=" bg-[#FF5D2E]  py-[10px] px-[16px] text-white flex justify-center items-center gap-2 rounded-[12px]">
-            <TiUserAdd size={20} />
-            Add user
-          </button>
+          <Link to={"/dashboard/add-user"}>
+            <button className=" bg-[#FF5D2E]  py-[8px] px-[16px] text-white flex justify-center items-center gap-2 rounded-[12px]">
+              <TiUserAdd size={20} />
+              Add user
+            </button>
+          </Link>
         </div>
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">

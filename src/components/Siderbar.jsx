@@ -20,12 +20,12 @@ const Siderbar = () => {
     {
       head: "Dashboard",
       text: <MdOutlineDashboard size={iconSize} />,
-      link: "/dashboard",
+      link: "/dashboard/main",
     },
     {
       head: "User",
       text: <FaRegUser size={iconSize} />,
-      link: "*",
+      link: "/dashboard/add-user",
     },
     {
       head: "Deposit",

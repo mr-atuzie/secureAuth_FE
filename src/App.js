@@ -8,6 +8,7 @@ import PasswordChange from "./pages/PasswordChange";
 import GroupLogin from "./pages/GroupLogin";
 import DashboardLayout from "./components/DashboardLayout";
 import Dashboard from "./pages/Dashboard";
+import AddUser from "./pages/AddUser";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
         <Route path="/password-changed" element={<PasswordChange />} />
 
         <Route path="/dashboard" element={<DashboardLayout />}>
-          <Route index element={<Dashboard />} />
+          <Route path="main" index element={<Dashboard />} />
+          <Route path="add-user" element={<AddUser />} />
         </Route>
       </Routes>
     </BrowserRouter>
