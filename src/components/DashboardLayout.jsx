@@ -5,15 +5,15 @@ import Siderbar from "./Siderbar";
 
 const DashboardLayout = () => {
   return (
-    <div className=" w-full    bg-[#FAFAFB] ">
+    <div className=" w-full  bg-green-900    ">
       <Header />
       <div className=" flex h-full  bg-[#FAFAFB]   ">
-        <div className=" w-[20%] block  absolute left-0 bg-[#FAFAFB]   ">
+        <div className=" w-[20%]  h  static left-0 bg-[#FAFAFB]   ">
           <Siderbar />
         </div>
 
-        <div className=" w-[80%] block   py-5  lg:ml-[20%] bg-[#FAFAFB] ">
-          <div className=" w-[95%] mx-auto">
+        <div className=" w-[80%]    py-5    ">
+          <div className=" w-[90%] mx-auto">
             <Outlet />
           </div>
         </div>

@@ -116,9 +116,9 @@ const Siderbar = () => {
                 : " text-[#8C8C8C]"
             }
           >
-            <div className="flex gap-3 w-full  items-center px-6  py-3.5">
-              <div className=" text-[13px]">{link.text}</div>
-              <p className="font-medium   ">{link.head}</p>
+            <div className="flex gap-3 w-full  items-center px-6  py-3">
+              <div className="  ">{link.text}</div>
+              <p className="font-medium text-[13px]  font2  ">{link.head}</p>
             </div>
           </NavLink>
         );
