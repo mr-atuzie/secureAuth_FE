@@ -6,7 +6,7 @@ const PasswordChange = () => {
   const navigate = useNavigate();
   return (
     <div className=" w-full min-h-screen bg-[#F7F9FC] flex justify-center flex-col  items-center mx-auto ">
-      <div className=" w-[620px] h-[300px] bg-white shadow-sm flex justify-center items-center flex-col">
+      <div className=" w-[90%] lg:w-[620px] h-[300px] bg-white shadow-sm flex justify-center items-center flex-col">
         <div className=" w-[60px] h-[60px] flex justify-center items-center bg-[#FFEFEA] rounded-full">
           <IoLockClosedOutline size={20} className=" text-[#FF5D2E]" />
         </div>
