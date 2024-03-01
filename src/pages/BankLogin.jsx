@@ -10,22 +10,23 @@ const BankLogin = () => {
     <div className=" w-full min-h-screen bg-[#F7F9FC] flex justify-center  items-center mx-auto ">
       <button
         onClick={() => navigate(-1)}
-        className=" fixed flex font-semibold items-center justify-center gap-2 top-8 left-8"
+        className=" fixed flex font-semibold items-center justify-center gap-2 top-2 left-2 lg:top-8  lg:left-8"
       >
         <IoIosArrowBack />
         Go back
       </button>
-      <div className=" h-[476px] w-[456px] ">
-        <form className=" bg-white w-full h-full border border-[#D0D5DD] py-[32px] px-[28px] shadow-md rounded-xl ">
-          <h1 className=" text-[28px] font-medium text-center">
-            Log in into Bank
+
+      <div className=" h-[476px] w-[90%] lg:w-[456px] ">
+        <form className=" bg-white w-full h-full border border-[#D0D5DD] p-5 lg:py-[32px] lg:px-[28px] shadow-md rounded-xl ">
+          <h1 className=" text-[20px] lg:text-[28px] font-medium text-center">
+            Login in into Bank
           </h1>
-          <p className=" text-base text-[#667185] text-center">
+          <p className=" text-xs lg:text-base text-[#667185] text-center">
             Enter your credentials to access your dashboard
           </p>
 
           <div
-            className=" flex flex-col gap-2 mt-10
+            className=" flex flex-col gap-2 mt-8  lg:mt-10
           "
           >
             <label
@@ -34,7 +35,7 @@ const BankLogin = () => {
             >
               email address
             </label>
-            <div className=" w-full flex justify-center items-center border border-[#FCB59A] p-4  rounded-md">
+            <div className=" w-full flex justify-center items-center border border-[#FCB59A] p-3 lg:p-4  rounded-md">
               <input
                 className=" w-full outline-none border-none placeholder:font-normal placeholder:text-sm placeholder:text-gray-400 "
                 placeholder="Enter your work email address"
@@ -47,7 +48,7 @@ const BankLogin = () => {
           </div>
 
           <div
-            className=" flex flex-col gap-2 mt-6
+            className=" flex flex-col gap-2 mt-4 lg:mt-6
           "
           >
             <label
@@ -56,7 +57,7 @@ const BankLogin = () => {
             >
               Password
             </label>
-            <div className=" w-full flex justify-center items-center border p-4 border-[#FCB59A] rounded-md">
+            <div className=" w-full flex justify-center items-center border p-3 lg:p-4 border-[#FCB59A] rounded-md">
               <input
                 className=" w-full outline-none border-none placeholder:font-normal placeholder:text-sm placeholder:text-gray-400 "
                 placeholder="Enter password"
@@ -75,8 +76,8 @@ const BankLogin = () => {
           </Link>
 
           <button
-            onClick={() => navigate("/dashboard")}
-            className=" w-full mt-8 px-[24px] rounded-[12px] py-[16px] font-semibold bg-[#FF5D2E]  text-white justify-center items-center flex gap-4"
+            onClick={() => navigate("/dashboard/main")}
+            className=" w-full mt-8 px-[24px] rounded-[12px] py-[12px] lg:py-[16px] font-semibold bg-[#FF5D2E]  text-white justify-center items-center flex gap-4"
           >
             Log into Dashboard
           </button>

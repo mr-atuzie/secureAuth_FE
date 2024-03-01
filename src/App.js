@@ -9,6 +9,8 @@ import GroupLogin from "./pages/GroupLogin";
 import DashboardLayout from "./components/DashboardLayout";
 import Dashboard from "./pages/Dashboard";
 import AddUser from "./pages/AddUser";
+import PaymentGatewayLogin from "./pages/PaymentGatewayLogin";
+import SocialMarketLogin from "./pages/SocialMarketLogin";
 
 function App() {
   return (
@@ -17,6 +19,14 @@ function App() {
         <Route path="/" element={<AuthOptions />}></Route>
         <Route path="/admin-login" element={<AdminLogin />} />
         <Route path="/group-login" element={<GroupLogin />} />
+        <Route
+          path="/payment-gateway-login"
+          element={<PaymentGatewayLogin />}
+        />
+        <Route
+          path="/social-marketplace-login"
+          element={<SocialMarketLogin />}
+        />
         <Route path="/forget-password" element={<ForgotPaasword />} />
         <Route path="/reset-email" element={<ResetEmail />} />
         <Route path="/reset-password" element={<ResetPassword />} />

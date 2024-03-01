@@ -4,7 +4,7 @@ import { FaRegEyeSlash } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
 
-const GroupLogin = () => {
+const PaymentGatewayLogin = () => {
   const navigate = useNavigate();
   return (
     <div className=" w-full min-h-screen bg-[#F7F9FC] flex justify-center  items-center mx-auto ">
@@ -19,7 +19,7 @@ const GroupLogin = () => {
       <div className=" h-[476px] w-[90%] lg:w-[456px] ">
         <form className=" bg-white w-full h-full border border-[#D0D5DD] p-5 lg:py-[32px] lg:px-[28px] shadow-md rounded-xl ">
           <h1 className=" text-[20px] lg:text-[28px] font-medium text-center">
-            Login in into Group
+            Login in into Payment Gateway
           </h1>
           <p className=" text-xs lg:text-base text-[#667185] text-center">
             Enter your credentials to access your dashboard
@@ -87,4 +87,4 @@ const GroupLogin = () => {
   );
 };
 
-export default GroupLogin;
+export default PaymentGatewayLogin;

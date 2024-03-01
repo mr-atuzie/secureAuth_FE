@@ -21,12 +21,12 @@ const AuthOptions = () => {
     {
       head: "Socail marketplace",
       text: "Sign in into the group to access reports and KPI",
-      link: "/",
+      link: "/social-marketpalce-login",
     },
     {
       head: "Payment gateway",
       text: "Sign in into the group to access reports and KPI",
-      link: "/",
+      link: "/payment-gateway-login",
     },
   ];
   return (
