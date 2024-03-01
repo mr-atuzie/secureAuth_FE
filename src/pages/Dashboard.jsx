@@ -80,9 +80,9 @@ const Dashboard = () => {
         {/* dasboard graph */}
         <div className=" p-3 bg-white w-[797px] h-[328px] mt-8   border border-gray-200 rounded-[10px]">
           <div className=" flex justify-between items-center">
-            <h1 className=" text-base font-semibold ">Sales report</h1>
+            <h1 className=" text-base font-semibold ">Sales Report</h1>
 
-            <div className=" flex items-center gap-3">
+            <div className=" flex items-center gap-2">
               <button className=" p-3 border-gray-400 border text-xs font-semibold rounded-[10px]">
                 12 months
               </button>
@@ -97,9 +97,10 @@ const Dashboard = () => {
               </button>
             </div>
 
-            <p className=" text-green-500 font-medium tracking-wide text-xs uppercase  flex items-center gap-1">
-              +35% <BsArrowUp />
-            </p>
+            <button className=" p-3 border-gray-400 border text-xs font-semibold rounded-[10px]">
+              <TiUserAdd size={20} />
+              Add a user
+            </button>
           </div>
         </div>
       </section>
