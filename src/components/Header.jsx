@@ -6,7 +6,11 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 const Header = () => {
   return (
     <header className=" bg-white w-full h-[61px] flex justify-between items-center px-[42px] py-[16px]">
-      <img width={166} height={29} src={logo} alt="logo" />
+      <img
+        className=" w-[100px] lg:w-[166px] lg:h-[29px] h-[20px] "
+        src={logo}
+        alt="logo"
+      />
 
       <div className="hidden w-[910px] h-[40px] lg:flex gap-2 items-center border g  p-2  rounded-md">
         <GoSearch size={20} />
@@ -34,7 +38,7 @@ const Header = () => {
         <img
           src="https://media.istockphoto.com/id/1355110818/photo/studio-shot-of-a-handsome-and-happy-young-man-posing-against-a-grey-background.jpg?s=612x612&w=0&k=20&c=T39jUOOjC8H-Op0cfd-uiNXk1a2XBn1sXkQbKIWwY7E="
           alt="profile-pic"
-          className="w-[36px] h-[36px] rounded-full object-cover"
+          className="lg:w-[36px] lg:h-[36px] w-[26px] h-[25px] rounded-full object-cover"
         />
       </div>
     </header>

@@ -12,7 +12,7 @@ const DashboardLayout = () => {
           <Siderbar />
         </div>
 
-        <div className=" w-[80%]    py-5    ">
+        <div className=" w-full lg:w-[80%]    py-5    ">
           <div className=" w-[90%] mx-auto">
             <Outlet />
           </div>
