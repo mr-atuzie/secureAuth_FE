@@ -5,9 +5,9 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 
 const Header = () => {
   return (
-    <header className=" bg-white w-full h-[61px] flex justify-between items-center px-[42px] py-[16px]">
+    <header className=" bg-white w-full h-[61px] flex justify-between items-center px-[20px] py-[8px] lg:px-[42px] lg:py-[16px]">
       <img
-        className=" w-[100px] lg:w-[166px] lg:h-[29px] h-[20px] "
+        className=" w-[80px] lg:w-[166px] lg:h-[29px] h-[20px] "
         src={logo}
         alt="logo"
       />
@@ -24,7 +24,7 @@ const Header = () => {
       </div>
 
       <div className=" flex items-center gap-3 lg:gap-5">
-        <div className=" text-[#3F3F46]">
+        <div className=" hidden lg:block text-[#3F3F46]">
           <IoIosNotificationsOutline size={25} />
         </div>
 
