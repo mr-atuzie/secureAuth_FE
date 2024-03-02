@@ -12,6 +12,8 @@ import AddUser from "./pages/AddUser";
 import PaymentGatewayLogin from "./pages/PaymentGatewayLogin";
 import SocialMarketLogin from "./pages/SocialMarketLogin";
 import BankLogin from "./pages/BankLogin";
+import AddUserOption from "./pages/AddUserOption";
+import AddUserSuccess from "./pages/AddUserSuccess";
 
 function App() {
   return (
@@ -36,7 +38,9 @@ function App() {
 
         <Route path="/dashboard" element={<DashboardLayout />}>
           <Route path="main" index element={<Dashboard />} />
+          <Route path="add-user/option" element={<AddUserOption />} />
           <Route path="add-user" element={<AddUser />} />
+          <Route path="add-user/successfull" element={<AddUserSuccess />} />
         </Route>
       </Routes>
     </BrowserRouter>

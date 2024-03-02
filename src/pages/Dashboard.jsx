@@ -12,7 +12,7 @@ const Dashboard = () => {
         <div className=" w-full flex justify-between mb-3">
           <h1 className=" font2 font-semibold  ">Hey David Okulola -</h1>
 
-          <Link to={"/dashboard/add-user"}>
+          <Link to={"/dashboard/add-user/option"}>
             <button className=" bg-[#FF5D2E] font-semibold  py-[8px] px-[16px] text-white flex justify-center items-center gap-2 rounded-[12px]">
               <TiUserAdd size={20} />
               Add a user
