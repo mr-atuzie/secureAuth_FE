@@ -12,7 +12,7 @@ const Header = () => {
         alt="logo"
       />
 
-      <div className="hidden w-[910px] h-[40px] lg:flex gap-2 items-center border g  p-2  rounded-md">
+      <div className="hidden w-[910px] h-[40px] lg:flex gap-2 items-center border p-2  rounded-md">
         <GoSearch size={20} />
         <input
           className=" w-full outline-none border-none placeholder:font-normal placeholder:text-sm placeholder:text-gray-400 "
