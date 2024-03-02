@@ -25,7 +25,7 @@ const Siderbar = () => {
     {
       head: "User",
       text: <FaRegUser size={iconSize} />,
-      link: "/dashboard/add-user",
+      link: "/dashboard/user",
     },
     {
       head: "Deposit",

@@ -10,10 +10,12 @@ const Dashboard = () => {
     <>
       <section className=" font2 w-full min-h-screen">
         <div className=" w-full flex justify-between mb-3">
-          <h1 className=" font2 font-semibold  ">Hey David Okulola -</h1>
+          <h1 className=" text-sm lg:text-base font-semibold  ">
+            Hey David Okulola -
+          </h1>
 
           <Link to={"/dashboard/add-user/option"}>
-            <button className=" bg-[#FF5D2E] font-semibold  py-[8px] px-[16px] text-white flex justify-center items-center gap-2 rounded-[12px]">
+            <button className=" text-sm lg:text-base bg-[#FF5D2E] font-semibold py-[4px] lg:py-[8px] px-[8px] lg:px-[16px] text-white flex justify-center items-center gap-2 rounded-[12px]">
               <TiUserAdd size={20} />
               Add a user
             </button>

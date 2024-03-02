@@ -9,7 +9,7 @@ const AddUserOption = () => {
     <div className="font2 ">
       <button
         onClick={() => navigate(-1)}
-        className="  flex font-semibold items-center justify-center gap-2 "
+        className="  text-sm lg:text-base flex font-semibold items-center justify-center gap-2 "
       >
         <IoIosArrowBack />
 

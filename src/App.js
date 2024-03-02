@@ -14,6 +14,7 @@ import SocialMarketLogin from "./pages/SocialMarketLogin";
 import BankLogin from "./pages/BankLogin";
 import AddUserOption from "./pages/AddUserOption";
 import AddUserSuccess from "./pages/AddUserSuccess";
+import DashboardUser from "./pages/DashboardUser";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path="add-user/option" element={<AddUserOption />} />
           <Route path="add-user" element={<AddUser />} />
           <Route path="add-user/successfull" element={<AddUserSuccess />} />
+          <Route path="user" element={<DashboardUser />} />
         </Route>
       </Routes>
     </BrowserRouter>

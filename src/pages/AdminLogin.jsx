@@ -10,7 +10,7 @@ const AdminLogin = () => {
     <div className=" w-full min-h-screen bg-[#F7F9FC] flex justify-center  items-center mx-auto ">
       <button
         onClick={() => navigate(-1)}
-        className=" fixed flex font-semibold items-center justify-center gap-2 top-2 left-2 lg:top-8  lg:left-8"
+        className="  text-sm lg:text-base fixed flex font-semibold items-center justify-center gap-2 top-2 left-2 lg:top-8  lg:left-8"
       >
         <IoIosArrowBack />
         Go back
