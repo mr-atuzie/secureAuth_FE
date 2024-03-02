@@ -19,7 +19,7 @@ const PasswordChange = () => {
 
         <button
           onClick={() => navigate("/admin-login")}
-          className=" rounded-lg text-center mt-6 text-white bg-[#FF5D2E] w-full mx-3 lg:mx-0 lg:w-[400px] h-[55px]"
+          className=" rounded-lg text-center mt-6 text-white bg-[#FF5D2E] w-[90%] lg:mx-0 lg:w-[400px] h-[55px]"
         >
           Login
         </button>

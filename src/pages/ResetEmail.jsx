@@ -20,7 +20,7 @@ const ResetEmail = () => {
 
         <button
           onClick={() => navigate("/reset-password")}
-          className=" rounded-lg text-center mt-6 text-white bg-[#FF5D2E] w-[400px] h-[55px]"
+          className=" rounded-lg text-center mt-6 text-white bg-[#FF5D2E] w-[90%] lg:w-[400px] h-[55px]"
         >
           Got it
         </button>
