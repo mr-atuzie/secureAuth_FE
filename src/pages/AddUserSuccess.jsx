@@ -15,7 +15,7 @@ const AddUserSuccess = () => {
 
         <span className=" underline"> Back</span>
       </button>
-      <div className=" w-[90%] lg:w-[40%] h-[300px] bg-white shadow-sm flex justify-center items-center flex-col">
+      <div className=" w-[90%] lg:w-[40%] h-[150px] lg:h-[300px] bg-white shadow-sm flex justify-center items-center flex-col">
         <div className=" w-[60px] h-[60px] flex justify-center items-center bg-[#FFEFEA] rounded-full">
           <TiUserAdd size={25} className=" text-[#FF5D2E]" />
         </div>
