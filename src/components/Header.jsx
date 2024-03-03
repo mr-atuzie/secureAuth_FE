@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className=" bg-white w-full h-[61px] flex justify-between items-center px-[20px] py-[8px] lg:px-[42px] lg:py-[16px]">
       <img
-        className=" w-[80px] lg:w-[166px] lg:h-[29px] h-[20px] "
+        className=" w-[100px] lg:w-[166px] lg:h-[29px] h-[20px] "
         src={logo}
         alt="logo"
       />

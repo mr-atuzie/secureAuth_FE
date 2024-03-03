@@ -6,7 +6,7 @@ import { IoIosArrowBack } from "react-icons/io";
 const AddUserSuccess = () => {
   const navigate = useNavigate();
   return (
-    <div className=" font2 relative w-full  flex justify-center items-center">
+    <div className=" font2 relative w-full h-screen flex justify-center items-center">
       <button
         onClick={() => navigate(-1)}
         className=" text-sm lg:text-base  flex font-semibold absolute top-2 left-2 items-center justify-center gap-2 "
