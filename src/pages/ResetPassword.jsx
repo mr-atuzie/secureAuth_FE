@@ -8,7 +8,7 @@ const ResetPassword = () => {
     <div className=" w-full min-h-screen bg-[#F7F9FC] flex justify-center  items-center mx-auto ">
       <div className=" h-[476px] w-[456px] ">
         <form className=" w-full h-full  py-[32px] px-[28px]  ">
-          <h1 className=" text-[20px] lg:text-[28px] font-medium text-center">
+          <h1 className=" font3 text-[20px] lg:text-[28px] font-medium text-center">
             Reset Password
           </h1>
           <p className=" text-xs lg:text-base text-[#667185] text-center">
@@ -20,7 +20,7 @@ const ResetPassword = () => {
           "
           >
             <label
-              className=" tracking-wide uppercase text-xs font-semibold "
+              className=" tracking-wide capitalize text-xs font-medium "
               htmlFor="password"
             >
               new password
@@ -42,7 +42,7 @@ const ResetPassword = () => {
           "
           >
             <label
-              className=" tracking-wide uppercase text-xs font-semibold "
+              className=" tracking-wide capitalize text-xs font-medium "
               htmlFor="password"
             >
               confirm password
@@ -61,7 +61,7 @@ const ResetPassword = () => {
 
           <button
             onClick={() => navigate("/password-changed")}
-            className=" w-full mt-5 px-[24px] rounded-[12px] py-[16px] font-semibold bg-[#FF5D2E]  text-white justify-center items-center flex gap-4"
+            className=" w-full mt-8 px-[24px] rounded-[12px] py-[16px] font-semibold bg-[#FF5D2E]  text-white justify-center items-center flex gap-4"
           >
             Save changes
           </button>

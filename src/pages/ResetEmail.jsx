@@ -10,7 +10,7 @@ const ResetEmail = () => {
         <div className=" w-[60px] h-[60px] flex justify-center items-center bg-[#FFEFEA] rounded-full">
           <FaRegEnvelope size={20} className=" text-[#FF5D2E]" />
         </div>
-        <h1 className=" text-[20pz] lg:text-[24px] font-medium text-center">
+        <h1 className=" text-[20pz] lg:text-[24px] font-semibold text-center">
           Check your email
         </h1>
         <p className=" text-xs lg:w-[340px] lg:text-base text-[#8C8C8C] text-center">

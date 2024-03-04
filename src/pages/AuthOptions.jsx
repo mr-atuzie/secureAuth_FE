@@ -1,6 +1,6 @@
 import React from "react";
 import AuthOptionsCard from "../components/AuthOptionsCard";
-import { CiLogin } from "react-icons/ci";
+import { CiLogout } from "react-icons/ci";
 import { useNavigate } from "react-router-dom";
 // import authFooter from "../assets/auth.png";
 
@@ -19,7 +19,7 @@ const AuthOptions = () => {
       link: "/bank-login",
     },
     {
-      head: "Socail marketplace",
+      head: "Social marketplace",
       text: "Sign in into the group to access reports and KPI",
       link: "/social-marketplace-login",
     },
@@ -49,10 +49,10 @@ const AuthOptions = () => {
 
       <button
         onClick={() => navigate("/admin-login")}
-        className=" lg:w-[564px] mt-8 px-[20px] md:px-[24px] rounded-[12px] py-[12px] md:py-[16px] font-semibold border border-[#FF7D58]  bg-white text-[#FF7D58] justify-center items-center flex gap-4"
+        className=" lg:w-[564px] mt-8 px-[20px] md:px-[24px] rounded-[12px] py-[12px] md:py-[16px] font-semibold border border-[#FF7D58]  bg-white text-[#FF7D58] justify-center items-center flex gap-2"
       >
         Login as Admin
-        <CiLogin size={30} />
+        <CiLogout size={30} />
       </button>
 
       <div className=" w-[95%] px-3 lg:w-[1386px] mt-10 h-[240px]  lg:h-[340px] rounded-t-lg  bg-[#FFEFEA] flex flex-col justify-center items-center mx-auto">
@@ -60,9 +60,10 @@ const AuthOptions = () => {
         <h1 className=" text-[#FF6634] text-[20px] md:text-[30px] font-semibold text-center leading-none">
           Report and Analytics <br /> Dashbaord
         </h1>
-        <p className=" text-[#707070] text-center text-xs mt-1  md:text-[14px] lg:w-[420px]">
-          Our comprehensive design system offers you an unparalleled range of
-          components, sparking creativity and boosting efficiency
+        <p className=" text-[#707070] text-center text-xs lg:text-base mt-3  md:text-[14px] ">
+          Our comprehensive design system offers you an unparalleled <br />{" "}
+          range of components, sparking creativity and boosting <br />{" "}
+          efficiency
         </p>
       </div>
     </div>

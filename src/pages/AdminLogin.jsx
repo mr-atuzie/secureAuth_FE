@@ -35,15 +35,15 @@ const AdminLogin = () => {
             >
               email address
             </label>
-            <div className=" w-full flex justify-center items-center border border-[#FCB59A] p-3 lg:p-4  rounded-md">
+            <div className=" w-full flex justify-center items-center border hover:border-[#FCB59A] border-[#D0D5DD] p-3.5  rounded-md">
               <input
-                className=" w-full outline-none border-none placeholder:font-normal placeholder:text-sm placeholder:text-gray-400 "
+                className=" w-full h-full  border outline-none border-none  placeholder:font-normal placeholder:text-sm placeholder:text-gray-400 "
                 placeholder="Enter your work email address"
                 type="email"
                 name="email"
                 id="email"
               />
-              <MdOutlineEmail size={20} className=" text-gray-500" />
+              <MdOutlineEmail size={20} className=" text-gray-500 " />
             </div>
           </div>
 
@@ -57,7 +57,7 @@ const AdminLogin = () => {
             >
               Password
             </label>
-            <div className=" w-full flex justify-center items-center border p-3 lg:p-4 border-[#FCB59A] rounded-md">
+            <div className=" w-full flex justify-center items-center border hover:border-[#FCB59A]  p-3.5  rounded-md">
               <input
                 className=" w-full outline-none border-none placeholder:font-normal placeholder:text-sm placeholder:text-gray-400 "
                 placeholder="Enter password"
