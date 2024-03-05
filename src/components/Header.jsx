@@ -8,6 +8,7 @@ import Siderbar from "./Siderbar";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
+
   return (
     <nav>
       <header className=" bg-white w-full h-[61px] flex justify-between items-center px-[20px] py-[8px] lg:px-[42px] lg:py-[16px]">
@@ -58,8 +59,8 @@ const Header = () => {
         </div>
       </header>
       {menu && (
-        <div className=" py-6 fixed top-0 left-0 w-[70%] bg-[#FAFAFB] lg:hidden">
-          <Siderbar />
+        <div className=" py-10 fixed top-0 left-0 w-[70%] bg-[#FAFAFB] lg:hidden">
+          <Siderbar setMenu={setMenu} />
         </div>
       )}
     </nav>

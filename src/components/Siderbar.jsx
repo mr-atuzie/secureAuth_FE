@@ -15,7 +15,7 @@ import { IoMdCard } from "react-icons/io";
 
 const iconSize = 15;
 
-const Siderbar = () => {
+const Siderbar = ({ setMenu }) => {
   const links = [
     {
       head: "Dashboard",
@@ -110,6 +110,7 @@ const Siderbar = () => {
           <NavLink
             key={index}
             to={link.link}
+            onclick={() => setMenu(false)}
             className={({ isActive }) =>
               isActive
                 ? "  text-[#FF5D2E] rounded font-semibold  bg-[#FFEFEA] block w-full"
