@@ -7,7 +7,7 @@ import { IoWalletOutline } from "react-icons/io5";
 import { LuLineChart, LuScrollText } from "react-icons/lu";
 import {
   MdMoney,
-  MdOutlineDashboard,
+  //   MdOutlineDashboard,
   MdOutlinePhoneAndroid,
 } from "react-icons/md";
 import { TbArrowsTransferDown, TbCash } from "react-icons/tb";
@@ -16,11 +16,11 @@ import { VscReferences } from "react-icons/vsc";
 const iconSize = 15;
 
 export const links = [
-  {
-    head: "Dashboard",
-    text: <MdOutlineDashboard size={iconSize} />,
-    link: "/dashboard/main",
-  },
+  //   {
+  //     head: "Dashboard",
+  //     text: <MdOutlineDashboard size={iconSize} />,
+  //     link: "/dashboard/main",
+  //   },
   {
     head: "User",
     text: <FaRegUser size={iconSize} />,
