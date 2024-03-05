@@ -27,6 +27,11 @@ import Revenue from "./pages/ReportDashboard/Revenue";
 import CommissionPayment from "./pages/ReportDashboard/CommissionPayment";
 import AtmCard from "./pages/ReportDashboard/AtmCard";
 import PaymentRequest from "./pages/ReportDashboard/PaymentRequest";
+import Pos from "./pages/ReportDashboard/Pos";
+import Ussd from "./pages/ReportDashboard/Ussd";
+import Scan from "./pages/ReportDashboard/Scan";
+import CardPayment from "./pages/ReportDashboard/CardPayment";
+import Invoicing from "./pages/ReportDashboard/Invoicing";
 
 function App() {
   return (
@@ -67,6 +72,11 @@ function App() {
           <Route path="commission-payment" element={<CommissionPayment />} />
           <Route path="atm-card" element={<AtmCard />} />
           <Route path="payment-request" element={<PaymentRequest />} />
+          <Route path="invoicing" element={<Invoicing />} />
+          <Route path="card-payment" element={<CardPayment />} />
+          <Route path="scan" element={<Scan />} />
+          <Route path="ussd" element={<Ussd />} />
+          <Route path="pos" element={<Pos />} />
         </Route>
       </Routes>
     </BrowserRouter>

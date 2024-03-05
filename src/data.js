@@ -79,26 +79,26 @@ export const links = [
   {
     head: "Invoicing",
     text: <LuScrollText size={iconSize} />,
-    link: "*",
+    link: "/dashboard/invoicing",
   },
   {
     head: "Scan and pay",
     text: <BsQrCodeScan size={iconSize} />,
-    link: "*",
+    link: "/dashboard/scan",
   },
   {
     head: "Ussd",
     text: <MdOutlinePhoneAndroid size={iconSize} />,
-    link: "*",
+    link: "/dashboard/ussd",
   },
   {
     head: "Card payment gateway",
     text: <IoMdCard size={iconSize} />,
-    link: "*",
+    link: "/dashboard/card-payment",
   },
   {
     head: "Pos terminal",
     text: <BsCalculator size={iconSize} />,
-    link: "*",
+    link: "/dashboard/pos",
   },
 ];
