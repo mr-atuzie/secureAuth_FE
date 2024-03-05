@@ -1,6 +1,6 @@
 import React from "react";
 import { TiUserAdd } from "react-icons/ti";
-import { formatter } from "../utils";
+import { formatter } from "../../utils";
 import { BsArrowUp } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { FaRegFilePdf } from "react-icons/fa";
