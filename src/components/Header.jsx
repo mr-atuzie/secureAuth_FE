@@ -2,12 +2,13 @@ import React from "react";
 import logo from "../assets/logo.png";
 import { GoSearch } from "react-icons/go";
 import { IoIosNotificationsOutline } from "react-icons/io";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Header = () => {
   return (
     <header className=" bg-white w-full h-[61px] flex justify-between items-center px-[20px] py-[8px] lg:px-[42px] lg:py-[16px]">
       <img
-        className=" w-[100px] lg:w-[166px] lg:h-[29px] h-[20px] "
+        className=" w-[90px] lg:w-[166px] lg:h-[29px] h-[20px] "
         src={logo}
         alt="logo"
       />
@@ -40,6 +41,9 @@ const Header = () => {
           alt="profile-pic"
           className="lg:w-[36px] lg:h-[36px] w-[26px] h-[25px] rounded-full object-cover"
         />
+        <span className=" shadow-md p-2 rounded-md">
+          <RxHamburgerMenu size={25} />
+        </span>
       </div>
     </header>
   );

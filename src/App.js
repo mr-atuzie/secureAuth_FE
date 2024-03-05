@@ -17,6 +17,7 @@ import AddUserSuccess from "./pages/ReportDashboard/AddUserSuccess";
 import DashboardUser from "./pages/ReportDashboard/DashboardUser";
 import ScrollTop from "./components/ScrollTop";
 import DashboardOptions from "./pages/DashboardOptions";
+import Deposit from "./pages/ReportDashboard/Deposit";
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
           <Route path="add-user" element={<AddUser />} />
           <Route path="add-user/successfull" element={<AddUserSuccess />} />
           <Route path="user" element={<DashboardUser />} />
+          <Route path="deposit" element={<Deposit />} />
         </Route>
       </Routes>
     </BrowserRouter>
