@@ -16,13 +16,15 @@ import AddUserOption from "./pages/AddUserOption";
 import AddUserSuccess from "./pages/AddUserSuccess";
 import DashboardUser from "./pages/DashboardUser";
 import ScrollTop from "./components/ScrollTop";
+import DashboardOptions from "./pages/DashboardOptions";
 
 function App() {
   return (
     <BrowserRouter>
       <ScrollTop />
       <Routes>
-        <Route path="/" element={<AuthOptions />} />
+        <Route path="/" element={<DashboardOptions />} />
+        <Route path="/auth-options" element={<AuthOptions />} />
         <Route path="/admin-login" element={<AdminLogin />} />
         <Route path="/bank-login" element={<BankLogin />} />
         <Route path="/group-login" element={<GroupLogin />} />
