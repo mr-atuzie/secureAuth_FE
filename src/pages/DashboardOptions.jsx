@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const DashboardOptions = () => {
   return (
-    <div className=" w-full min-h-screen  flex flex-col items-center justify-center">
+    <div className=" w-full min-h-screen  flex flex-col items-center  pt-14 justify-center">
       <h2 className=" text-[24px] text-center md:text-[30px] lg:text-[40px] font-bold mt-10 leading-none">
         Access Dashboard or Tech <br /> support
       </h2>
