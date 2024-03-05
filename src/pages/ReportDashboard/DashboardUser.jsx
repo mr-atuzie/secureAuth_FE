@@ -9,14 +9,14 @@ const DashboardUser = () => {
   return (
     <>
       <section className=" font2 w-full min-h-screen">
-        <div className=" w-full flex justify-between mb-3">
+        <div className=" w-full flex justify-between items-end mb-4">
           <h1 className=" text-sm lg:text-base font-semibold  ">
             Hey David Okulola -
           </h1>
 
           <div className=" flex gap-5">
-            <button className=" text-sm lg:text-base px-4 py-2 bg-white border border-[#FF5D2E] text-[#FF5D2E]  font-semibold flex justify-center items-center gap-2  rounded-full">
-              <img src={filter} alt="" />
+            <button className=" text-sm lg:text-base px-3  bg-white border border-[#FF5D2E] text-[#FF5D2E]  font-semibold flex justify-center items-center gap-2  rounded-full">
+              <img width={15} src={filter} alt="" />
               Filter
             </button>
             <button className=" text-sm lg:text-base bg-[#FF5D2E] font-semibold p-2.5  text-white flex justify-center items-center gap-2 rounded-[10px]">

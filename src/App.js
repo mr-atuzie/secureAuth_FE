@@ -22,6 +22,11 @@ import NIP from "./pages/ReportDashboard/NIP";
 import Transfer from "./pages/ReportDashboard/Transfer";
 import Withdraw from "./pages/ReportDashboard/Withdraw";
 import BillPayment from "./pages/ReportDashboard/BillPayment";
+import Referral from "./pages/ReportDashboard/Referral";
+import Revenue from "./pages/ReportDashboard/Revenue";
+import CommissionPayment from "./pages/ReportDashboard/CommissionPayment";
+import AtmCard from "./pages/ReportDashboard/AtmCard";
+import PaymentRequest from "./pages/ReportDashboard/PaymentRequest";
 
 function App() {
   return (
@@ -57,6 +62,11 @@ function App() {
           <Route path="transfer" element={<Transfer />} />
           <Route path="withdraw" element={<Withdraw />} />
           <Route path="bill-payment" element={<BillPayment />} />
+          <Route path="referral" element={<Referral />} />
+          <Route path="revenue" element={<Revenue />} />
+          <Route path="commission-payment" element={<CommissionPayment />} />
+          <Route path="atm-card" element={<AtmCard />} />
+          <Route path="payment-request" element={<PaymentRequest />} />
         </Route>
       </Routes>
     </BrowserRouter>

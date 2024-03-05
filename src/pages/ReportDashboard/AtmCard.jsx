@@ -5,7 +5,7 @@ import { formatter } from "../../utils";
 import filter from "../../assets/filter.png";
 import { IoIosAddCircleOutline } from "react-icons/io";
 
-const NIP = () => {
+const AtmCard = () => {
   return (
     <>
       <section className=" font2 w-full min-h-screen">
@@ -30,51 +30,27 @@ const NIP = () => {
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
             <h3 className=" font-medium tracking-wide text-xs uppercase text-[#71717A]">
-              Number of users
-            </h3>
-
-            <div className=" flex justify-between mt-3">
-              <h1 className=" text-[21px] font-semibold ">{formatter(2500)}</h1>
-
-              <p className=" text-green-500 font-medium tracking-wide text-xs uppercase  flex items-center gap-1">
-                +35% <BsArrowUp />
-              </p>
-            </div>
-          </div>
-          <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
-            <h3 className=" font-medium tracking-wide text-xs uppercase text-[#71717A]">
-              Number of active users
-            </h3>
-
-            <div className=" flex justify-between mt-3">
-              <h1 className=" text-[21px] font-semibold ">{formatter(1800)}</h1>
-
-              <p className=" text-green-500 font-medium tracking-wide text-xs uppercase  flex items-center gap-1">
-                +14% <BsArrowUp />
-              </p>
-            </div>
-          </div>
-          <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
-            <h3 className=" font-medium tracking-wide text-xs uppercase text-[#71717A]">
-              Number of inactive users
-            </h3>
-
-            <div className=" flex justify-between mt-3">
-              <h1 className=" text-[21px] font-semibold ">{formatter(350)}</h1>
-
-              <p className=" text-[#F04438] font-medium tracking-wide text-xs uppercase  flex items-center gap-1">
-                +35% <BsArrowUp />
-              </p>
-            </div>
-          </div>
-          <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
-            <h3 className=" font-medium tracking-wide text-xs uppercase text-[#71717A]">
-              total customers
+              total value of referral payment
             </h3>
 
             <div className=" flex justify-between mt-3">
               <h1 className=" text-[21px] font-semibold ">
-                {formatter(33000)}
+                {formatter(25000000000)}
+              </h1>
+
+              <p className=" text-green-500 font-medium tracking-wide text-xs uppercase  flex items-center gap-1">
+                +35% <BsArrowUp />
+              </p>
+            </div>
+          </div>
+          <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
+            <h3 className=" font-medium tracking-wide text-xs uppercase text-[#71717A]">
+              total count of referral payment
+            </h3>
+
+            <div className=" flex justify-between mt-3">
+              <h1 className=" text-[21px] font-semibold ">
+                {formatter(45000)}
               </h1>
 
               <p className=" text-green-500 font-medium tracking-wide text-xs uppercase  flex items-center gap-1">
@@ -84,24 +60,73 @@ const NIP = () => {
           </div>
           <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
             <h3 className=" font-medium tracking-wide text-xs uppercase text-[#71717A]">
-              Number of users
+              Total COUNT of referrals
             </h3>
 
             <div className=" flex justify-between mt-3">
-              <h1 className=" text-[21px] font-semibold ">{formatter(2500)}</h1>
+              <h1 className=" text-[21px] font-semibold ">
+                {formatter(56000)}
+              </h1>
 
               <p className=" text-green-500 font-medium tracking-wide text-xs uppercase  flex items-center gap-1">
-                +35% <BsArrowUp />
+                +14% <BsArrowUp />
               </p>
             </div>
           </div>
           <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
             <h3 className=" font-medium tracking-wide text-xs uppercase text-[#71717A]">
-              Number of active users
+              Total COUNT of referrals
             </h3>
 
             <div className=" flex justify-between mt-3">
-              <h1 className=" text-[21px] font-semibold ">{formatter(1800)}</h1>
+              <h1 className=" text-[21px] font-semibold ">
+                {formatter(56000)}
+              </h1>
+
+              <p className=" text-green-500 font-medium tracking-wide text-xs uppercase  flex items-center gap-1">
+                +14% <BsArrowUp />
+              </p>
+            </div>
+          </div>
+          <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
+            <h3 className=" font-medium tracking-wide text-xs uppercase text-[#71717A]">
+              total count of referral payment
+            </h3>
+
+            <div className=" flex justify-between mt-3">
+              <h1 className=" text-[21px] font-semibold ">
+                {formatter(45000)}
+              </h1>
+
+              <p className=" text-green-500 font-medium tracking-wide text-xs uppercase  flex items-center gap-1">
+                +14% <BsArrowUp />
+              </p>
+            </div>
+          </div>
+          <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
+            <h3 className=" font-medium tracking-wide text-xs uppercase text-[#71717A]">
+              Total COUNT of referrals
+            </h3>
+
+            <div className=" flex justify-between mt-3">
+              <h1 className=" text-[21px] font-semibold ">
+                {formatter(56000)}
+              </h1>
+
+              <p className=" text-green-500 font-medium tracking-wide text-xs uppercase  flex items-center gap-1">
+                +14% <BsArrowUp />
+              </p>
+            </div>
+          </div>
+          <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
+            <h3 className=" font-medium tracking-wide text-xs uppercase text-[#71717A]">
+              Total COUNT of referrals
+            </h3>
+
+            <div className=" flex justify-between mt-3">
+              <h1 className=" text-[21px] font-semibold ">
+                {formatter(56000)}
+              </h1>
 
               <p className=" text-green-500 font-medium tracking-wide text-xs uppercase  flex items-center gap-1">
                 +14% <BsArrowUp />
@@ -111,9 +136,9 @@ const NIP = () => {
         </div>
 
         {/* dasboard graph */}
-        <div className=" lg:block p-3 bg-white w-full h-[328px] mt-8   border border-gray-200 rounded-[10px]">
+        <div className=" hidden lg:block p-3 bg-white w-[797px] h-[328px] mt-8   border border-gray-200 rounded-[10px]">
           <div className=" flex justify-between items-center">
-            <h1 className=" text-base font-semibold ">NIP</h1>
+            <h1 className=" text-base font-semibold ">Atm card</h1>
 
             <div className=" flex items-center gap-2">
               <button className=" p-3 border-gray-400 border text-xs font-semibold rounded-[10px]">
@@ -141,4 +166,4 @@ const NIP = () => {
   );
 };
 
-export default NIP;
+export default AtmCard;
