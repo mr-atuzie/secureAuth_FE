@@ -91,8 +91,8 @@ const Ussd = () => {
         </div>
 
         {/* dasboard graph */}
-        <div className=" hidden lg:block p-3 bg-white w-[797px] h-[328px] mt-8   border border-gray-200 rounded-[10px]">
-          <div className=" flex justify-between items-center">
+        <div className=" :block p-3 bg-white w-[797px] h-[328px] mt-8   border border-gray-200 rounded-[10px]">
+          <div className=" flex justify-between items-center flex-wrap">
             <h1 className=" text-base font-semibold ">Ussd</h1>
 
             <div className=" flex items-center gap-2">
