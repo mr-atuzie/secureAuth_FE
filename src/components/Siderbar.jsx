@@ -30,27 +30,27 @@ const Siderbar = () => {
     {
       head: "Deposit",
       text: <IoWalletOutline size={iconSize} />,
-      link: "*",
+      link: "/dashboard/deposit",
     },
     {
       head: "NIP",
       text: <BsBank size={iconSize} />,
-      link: "*",
+      link: "/dashboard/nip",
     },
     {
       head: "Transfer",
       text: <TbArrowsTransferDown size={iconSize} />,
-      link: "*",
+      link: "/dashboard/transfer",
     },
     {
       head: "Withdraw",
       text: <GrAtm size={iconSize} />,
-      link: "*",
+      link: "/dashboard/withdraw",
     },
     {
       head: "Bill payment",
       text: <CiReceipt size={iconSize} />,
-      link: "*",
+      link: "/dashboard/bill-payment",
     },
     {
       head: "Referral",
@@ -104,7 +104,7 @@ const Siderbar = () => {
     },
   ];
   return (
-    <div className=" w-full h-full my-[70px]">
+    <div className=" w-full h-full lg:my-[70px]">
       {links.map((link, index) => {
         return (
           <NavLink

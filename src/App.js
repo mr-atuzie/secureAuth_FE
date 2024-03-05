@@ -18,6 +18,10 @@ import DashboardUser from "./pages/ReportDashboard/DashboardUser";
 import ScrollTop from "./components/ScrollTop";
 import DashboardOptions from "./pages/DashboardOptions";
 import Deposit from "./pages/ReportDashboard/Deposit";
+import NIP from "./pages/ReportDashboard/NIP";
+import Transfer from "./pages/ReportDashboard/Transfer";
+import Withdraw from "./pages/ReportDashboard/Withdraw";
+import BillPayment from "./pages/ReportDashboard/BillPayment";
 
 function App() {
   return (
@@ -49,6 +53,10 @@ function App() {
           <Route path="add-user/successfull" element={<AddUserSuccess />} />
           <Route path="user" element={<DashboardUser />} />
           <Route path="deposit" element={<Deposit />} />
+          <Route path="nip" element={<NIP />} />
+          <Route path="transfer" element={<Transfer />} />
+          <Route path="withdraw" element={<Withdraw />} />
+          <Route path="bill-payment" element={<BillPayment />} />
         </Route>
       </Routes>
     </BrowserRouter>
