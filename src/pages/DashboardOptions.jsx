@@ -14,7 +14,7 @@ const DashboardOptions = () => {
       </p>
       <div className=" grid grid-cols-1  my-8  gap-6 justify-center">
         <Link to={"/auth-options"}>
-          <div className=" w-[90%]   border border-[#FFEFEA] lg:w-[543px] h-[120px] lg:h-[150px] shadow-sm flex flex-col justify-center items-center rounded-md px-3 ">
+          <div className="  border border-[#FFEFEA] w-[320px] lg:w-[543px] h-[120px] lg:h-[150px] shadow-sm flex flex-col justify-center items-center rounded-md px-3 ">
             <h3 className=" font-semibold">Reporting Dashboard</h3>
 
             <div className="  flex  relative">
@@ -30,7 +30,7 @@ const DashboardOptions = () => {
             </div>
           </div>
         </Link>
-        <div className="  w-[90%] border border-[#FFEFEA]  lg:w-[543px] h-[120px] lg:h-[150px] shadow-sm flex flex-col justify-center items-center rounded-md px-3 ">
+        <div className="   border border-[#FFEFEA] w-[320px] lg:w-[543px] h-[120px] lg:h-[150px] shadow-sm flex flex-col justify-center items-center rounded-md px-3 ">
           <h3 className=" font-semibold">Tech support</h3>
 
           <div className="  flex  relative">
