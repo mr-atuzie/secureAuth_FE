@@ -3,6 +3,7 @@ import logo from "../assets/logo.png";
 import { GoSearch } from "react-icons/go";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { MdOutlineClose } from "react-icons/md";
 import Siderbar from "./Siderbar";
 
 const Header = () => {
@@ -48,7 +49,11 @@ const Header = () => {
             onClick={() => setMenu(!menu)}
             className=" border shadow-md p-1 rounded-md lg:hidden"
           >
-            <RxHamburgerMenu size={25} />
+            {menu ? (
+              <MdOutlineClose size={25} />
+            ) : (
+              <RxHamburgerMenu size={25} />
+            )}
           </button>
         </div>
       </header>
