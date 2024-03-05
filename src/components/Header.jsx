@@ -32,7 +32,7 @@ const Header = () => {
             <IoIosNotificationsOutline size={25} />
           </div>
 
-          <div>
+          <div className=" hidden lg:block">
             <h3 className=" text-sm font-semibold">David Okunlola</h3>
             <p className=" text-gray-600 -mt-1 text-xs font-medium capitalize">
               Super admin
@@ -46,14 +46,14 @@ const Header = () => {
           />
           <button
             onClick={() => setMenu(!menu)}
-            className=" border shadow-md p-2 rounded-md"
+            className=" border shadow-md p-1 rounded-md lg:hidden"
           >
             <RxHamburgerMenu size={25} />
           </button>
         </div>
       </header>
       {menu && (
-        <div className=" fixed top-0 left-0 w-[65%] bg-[#FAFAFB]">
+        <div className=" py-6 fixed top-0 left-0 w-[70%] bg-[#FAFAFB] lg:hidden">
           <Siderbar />
         </div>
       )}

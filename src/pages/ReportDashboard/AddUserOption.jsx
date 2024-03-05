@@ -25,7 +25,7 @@ const AddUserOption = () => {
         </p>
       </div>
 
-      <div className=" w-[90%] lg:w-[65%] mx-auto grid grid-cols-1 lg:grid-cols-2 mt-8 gap-8  items-center justify-center">
+      <div className=" w-[80%] lg:w-[65%] mx-auto grid grid-cols-1 lg:grid-cols-2 mt-8 gap-8  items-center justify-center">
         <div className="  border-2 border-[#FFCDBE] border-dashed w-[340px] h-[120px] lg:h-[164px] shadow-sm flex flex-col justify-center rounded-md px-3 lg:px-5">
           <h3 className=" font-semibold">Group</h3>
           <div className=" flex gap-5">
