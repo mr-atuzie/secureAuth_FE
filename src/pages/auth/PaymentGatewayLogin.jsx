@@ -76,7 +76,7 @@ const PaymentGatewayLogin = () => {
           </Link>
 
           <button
-            onClick={() => navigate("/dashboard/main")}
+            onClick={() => navigate("/payment-gateway/user")}
             className=" w-full mt-8 px-[24px] rounded-[12px] py-[12px] lg:py-[16px] font-semibold bg-[#FF5D2E]  text-white justify-center items-center flex gap-4"
           >
             Log into Dashboard

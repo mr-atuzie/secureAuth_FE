@@ -97,8 +97,179 @@ export const links = [
     link: "/dashboard/card-payment",
   },
   {
-    head: "Pos terminal",
+    head: "Pos ",
     text: <BsCalculator size={iconSize} />,
     link: "/dashboard/pos",
+  },
+  {
+    head: "Pos terminal",
+    text: <BsCalculator size={iconSize} />,
+    link: "/dashboard/%",
+  },
+  {
+    head: "Loan",
+    text: <BsCalculator size={iconSize} />,
+    link: "/dashboard/%",
+  },
+  {
+    head: "Kyc verification",
+    text: <BsCalculator size={iconSize} />,
+    link: "/dashboard/%",
+  },
+  {
+    head: "KYC verification",
+    text: <BsCalculator size={iconSize} />,
+    link: "/dashboard/%",
+  },
+  {
+    head: "SMS",
+    text: <BsCalculator size={iconSize} />,
+    link: "/dashboard/%",
+  },
+  {
+    head: "Account creation and login",
+    text: <BsCalculator size={iconSize} />,
+    link: "/dashboard/%",
+  },
+  {
+    head: "Profiling",
+    text: <BsCalculator size={iconSize} />,
+    link: "/dashboard/%",
+  },
+];
+
+export const gatewayLinks = [
+  {
+    head: "User",
+    text: <FaRegUser size={iconSize} />,
+    link: "/payment-gateway/user",
+  },
+  {
+    head: "Commission Payment",
+    text: <MdMoney size={iconSize} />,
+    link: "/dashboard/commission-payment",
+  },
+  {
+    head: "Revenue",
+    text: <LuLineChart size={iconSize} />,
+    link: "/dashboard/revenue",
+  },
+  {
+    head: "Invoicing",
+    text: <LuScrollText size={iconSize} />,
+    link: "/dashboard/invoicing",
+  },
+  {
+    head: "Payment page terminal",
+    text: <IoMdCard size={iconSize} />,
+    link: "/dashboard/card-payment",
+  },
+  {
+    head: "Payment page",
+    text: <IoMdCard size={iconSize} />,
+    link: "/dashboard/card-payment",
+  },
+  {
+    head: "KYC verification",
+    text: <BsCalculator size={iconSize} />,
+    link: "/dashboard/%",
+  },
+  {
+    head: "SMS",
+    text: <BsCalculator size={iconSize} />,
+    link: "/dashboard/%",
+  },
+  {
+    head: "Account creation and login",
+    text: <BsCalculator size={iconSize} />,
+    link: "/dashboard/%",
+  },
+  {
+    head: "Profiling",
+    text: <BsCalculator size={iconSize} />,
+    link: "/dashboard/%",
+  },
+];
+
+export const marketplaceLinks = [
+  {
+    head: "User",
+    text: <FaRegUser size={iconSize} />,
+    link: "/marketplace/user",
+  },
+  {
+    head: "Commission Payment",
+    text: <MdMoney size={iconSize} />,
+    link: "/dashboard/commission-payment",
+  },
+  {
+    head: "Revenue",
+    text: <LuLineChart size={iconSize} />,
+    link: "/dashboard/revenue",
+  },
+  {
+    head: "Product",
+    text: <LuScrollText size={iconSize} />,
+    link: "/dashboard/invoicing",
+  },
+  {
+    head: "Share",
+    text: <IoMdCard size={iconSize} />,
+    link: "/dashboard/card-payment",
+  },
+  {
+    head: "Comment",
+    text: <IoMdCard size={iconSize} />,
+    link: "/dashboard/card-payment",
+  },
+  {
+    head: "hashtags",
+    text: <BsCalculator size={iconSize} />,
+    link: "/dashboard/%",
+  },
+  {
+    head: "Synchronization",
+    text: <BsCalculator size={iconSize} />,
+    link: "/dashboard/%",
+  },
+  {
+    head: "follow",
+    text: <BsCalculator size={iconSize} />,
+    link: "/dashboard/%",
+  },
+  {
+    head: "Post",
+    text: <BsCalculator size={iconSize} />,
+    link: "/dashboard/%",
+  },
+  {
+    head: "Media",
+    text: <BsCalculator size={iconSize} />,
+    link: "/dashboard/%",
+  },
+  {
+    head: "Image",
+    text: <BsCalculator size={iconSize} />,
+    link: "/dashboard/%",
+  },
+  {
+    head: "Chat",
+    text: <BsCalculator size={iconSize} />,
+    link: "/dashboard/%",
+  },
+  {
+    head: "SMS",
+    text: <BsCalculator size={iconSize} />,
+    link: "/dashboard/%",
+  },
+  {
+    head: "Account creation and login",
+    text: <BsCalculator size={iconSize} />,
+    link: "/dashboard/%",
+  },
+  {
+    head: "Profiling",
+    text: <BsCalculator size={iconSize} />,
+    link: "/dashboard/%",
   },
 ];

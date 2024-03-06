@@ -32,6 +32,14 @@ import Ussd from "./pages/ReportDashboard/Ussd";
 import Scan from "./pages/ReportDashboard/Scan";
 import CardPayment from "./pages/ReportDashboard/CardPayment";
 import Invoicing from "./pages/ReportDashboard/Invoicing";
+import GenerateReportForm from "./pages/ReportDashboard/GenerateReportForm";
+import GenerateReportTable from "./pages/ReportDashboard/GenerateReportTable";
+import GatewayLayout from "./components/GatewayLayout";
+import User from "./pages/GatewayDasboard/User";
+import MarketplaceLayout from "./components/MarketplaceLayout";
+import MarketUser from "./pages/MarketplaceDashboard/MarketUser";
+import GroupLayout from "./components/GroupLayout";
+import GroupUser from "./pages/GroupDashboard/GroupUser";
 
 function App() {
   return (
@@ -77,6 +85,23 @@ function App() {
           <Route path="scan" element={<Scan />} />
           <Route path="ussd" element={<Ussd />} />
           <Route path="pos" element={<Pos />} />
+          <Route path="generate-report" element={<GenerateReportForm />} />
+          <Route
+            path="generate-report-table"
+            element={<GenerateReportTable />}
+          />
+        </Route>
+
+        <Route path="/payment-gateway" element={<GatewayLayout />}>
+          <Route path="user" index element={<User />} />
+        </Route>
+
+        <Route path="/marketplace" element={<MarketplaceLayout />}>
+          <Route path="user" index element={<MarketUser />} />
+        </Route>
+
+        <Route path="/group" element={<GroupLayout />}>
+          <Route path="user" index element={<GroupUser />} />
         </Route>
       </Routes>
     </BrowserRouter>
