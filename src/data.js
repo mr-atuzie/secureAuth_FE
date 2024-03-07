@@ -177,22 +177,22 @@ export const gatewayLinks = [
   {
     head: "Payment page",
     text: <BsWallet size={iconSize} />,
-    link: "/payment-gateway/card-payment",
+    link: "/payment-gateway/payment",
   },
   {
     head: "KYC verification",
     text: <FaRegAddressCard size={iconSize} />,
-    link: "/payment-gateway/%",
+    link: "/payment-gateway/kyc",
   },
   {
     head: "SMS",
     text: <MdOutlineTextsms size={iconSize} />,
-    link: "/payment-gateway/%",
+    link: "/payment-gateway/sms",
   },
   {
     head: "Account creation and login",
     text: <SlLogin size={iconSize} />,
-    link: "/payment-gateway/%",
+    link: "/payment-gateway/account-creation",
   },
   {
     head: "Profiling",

@@ -48,6 +48,10 @@ import GatewayCommission from "./pages/GatewayDasboard/GatewayCommission";
 import GatewayRevenue from "./pages/GatewayDasboard/GatewayRevenue";
 import GatewayInvoice from "./pages/GatewayDasboard/GatewayInvoice";
 import GatewayPaymentTerminal from "./pages/GatewayDasboard/GatewayPaymentTerminal";
+import GatewayPayment from "./pages/GatewayDasboard/GatewayPayment";
+import GatewayKYC from "./pages/GatewayDasboard/GatewayKYC";
+import GatewaySms from "./pages/GatewayDasboard/GatewaySms";
+import GatewayAccountCreation from "./pages/GatewayDasboard/GatewayAccountCreation";
 
 function App() {
   return (
@@ -117,6 +121,14 @@ function App() {
             path="payment-terminal"
             index
             element={<GatewayPaymentTerminal />}
+          />
+          <Route path="payment" index element={<GatewayPayment />} />
+          <Route path="kyc" index element={<GatewayKYC />} />
+          <Route path="sms" index element={<GatewaySms />} />
+          <Route
+            path="account-creation"
+            index
+            element={<GatewayAccountCreation />}
           />
         </Route>
 
