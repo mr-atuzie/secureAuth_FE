@@ -5,14 +5,16 @@ import { formatter } from "../../utils";
 
 import filter from "../../assets/filter.png";
 import { IoIosAddCircleOutline } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const Withdraw = () => {
   return (
     <>
       <section className=" font2 w-full min-h-screen">
         <div className=" w-full flex justify-between items-end mb-4">
-          <h1 className=" text-sm lg:text-base font-semibold  ">
-            Hey David Okulola -
+           <h1 className=" text-sm lg:text-base font-semibold  ">
+            Hey David Okulola -{" "}
+            <span className=" text-[#71717A]">Welcome Back!</span>
           </h1>
 
           <div className=" flex gap-5">
@@ -20,10 +22,13 @@ const Withdraw = () => {
               <img width={15} src={filter} alt="" />
               Filter
             </button>
-            <button className=" text-sm lg:text-base bg-[#FF5D2E] font-semibold p-2.5  text-white flex justify-center items-center gap-2 rounded-[10px]">
-              <IoIosAddCircleOutline size={20} />
-              Generating report
-            </button>
+
+            <Link to={"/dashboard/generate-report"}>
+              <button className=" text-sm lg:text-base bg-[#FF5D2E] font-semibold p-2.5  text-white flex justify-center items-center gap-2 rounded-[10px]">
+                <IoIosAddCircleOutline size={20} />
+                Generating report
+              </button>
+            </Link>
           </div>
         </div>
 

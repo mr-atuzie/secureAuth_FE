@@ -6,13 +6,14 @@ import filter from "../../assets/filter.png";
 import { IoIosAddCircleOutline } from "react-icons/io";
 import { Link } from "react-router-dom";
 
-const Deposit = () => {
+const GatewayRevenue = () => {
   return (
     <>
       <section className=" font2 w-full min-h-screen">
         <div className=" w-full flex justify-between items-end mb-4">
           <h1 className=" text-sm lg:text-base font-semibold  ">
-            Hey David Okulola -
+            Hey David Okulola -{" "}
+            <span className=" text-[#71717A]">Welcome Back!</span>
           </h1>
 
           <div className=" flex gap-5">
@@ -33,8 +34,8 @@ const Deposit = () => {
         {/* dasboard card */}
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
-            <h3 className=" font-medium tracking-wide text-xs uppercase text-[#71717A]">
-              Number of users
+            <h3 className=" font-medium tracking-wide text-[11px] uppercase text-[#71717A]">
+              total value of commission payment
             </h3>
 
             <div className=" flex justify-between mt-3">
@@ -46,8 +47,8 @@ const Deposit = () => {
             </div>
           </div>
           <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
-            <h3 className=" font-medium tracking-wide text-xs uppercase text-[#71717A]">
-              Number of active users
+            <h3 className=" font-medium tracking-wide text-[11px] uppercase text-[#71717A]">
+              total count of commission payment
             </h3>
 
             <div className=" flex justify-between mt-3">
@@ -59,8 +60,8 @@ const Deposit = () => {
             </div>
           </div>
           <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
-            <h3 className=" font-medium tracking-wide text-xs uppercase text-[#71717A]">
-              Number of inactive users
+            <h3 className=" font-medium tracking-wide text-[11px] uppercase text-[#71717A]">
+              total value of general commission payment
             </h3>
 
             <div className=" flex justify-between mt-3">
@@ -72,8 +73,8 @@ const Deposit = () => {
             </div>
           </div>
           <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
-            <h3 className=" font-medium tracking-wide text-xs uppercase text-[#71717A]">
-              total customers
+            <h3 className=" font-medium tracking-wide text-[11px] uppercase text-[#71717A]">
+              total count of general commission payment
             </h3>
 
             <div className=" flex justify-between mt-3">
@@ -86,9 +87,10 @@ const Deposit = () => {
               </p>
             </div>
           </div>
+
           <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
-            <h3 className=" font-medium tracking-wide text-xs uppercase text-[#71717A]">
-              Number of users
+            <h3 className=" font-medium tracking-wide text-[11px] uppercase text-[#71717A]">
+              total value of specific commission payment
             </h3>
 
             <div className=" flex justify-between mt-3">
@@ -100,12 +102,95 @@ const Deposit = () => {
             </div>
           </div>
           <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
-            <h3 className=" font-medium tracking-wide text-xs uppercase text-[#71717A]">
-              Number of active users
+            <h3 className=" font-medium tracking-wide text-[11px] uppercase text-[#71717A]">
+              total count of specific commission payment
             </h3>
 
             <div className=" flex justify-between mt-3">
               <h1 className=" text-[21px] font-semibold ">{formatter(1800)}</h1>
+
+              <p className=" text-green-500 font-medium tracking-wide text-xs uppercase  flex items-center gap-1">
+                +14% <BsArrowUp />
+              </p>
+            </div>
+          </div>
+          <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
+            <h3 className=" font-medium tracking-wide text-[11px] uppercase text-[#71717A]">
+              total value of bill payment commission payment
+            </h3>
+
+            <div className=" flex justify-between mt-3">
+              <h1 className=" text-[21px] font-semibold ">{formatter(350)}</h1>
+
+              <p className=" text-[#F04438] font-medium tracking-wide text-xs uppercase  flex items-center gap-1">
+                +35% <BsArrowUp />
+              </p>
+            </div>
+          </div>
+          <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
+            <h3 className=" font-medium tracking-wide text-[11px] uppercase text-[#71717A]">
+              total count of bill payment commission payment
+            </h3>
+
+            <div className=" flex justify-between mt-3">
+              <h1 className=" text-[21px] font-semibold ">
+                {formatter(33000)}
+              </h1>
+
+              <p className=" text-green-500 font-medium tracking-wide text-xs uppercase  flex items-center gap-1">
+                +14% <BsArrowUp />
+              </p>
+            </div>
+          </div>
+
+          <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
+            <h3 className=" font-medium tracking-wide text-[11px] uppercase text-[#71717A]">
+              total value of pos commission payment
+            </h3>
+
+            <div className=" flex justify-between mt-3">
+              <h1 className=" text-[21px] font-semibold ">{formatter(2500)}</h1>
+
+              <p className=" text-green-500 font-medium tracking-wide text-xs uppercase  flex items-center gap-1">
+                +35% <BsArrowUp />
+              </p>
+            </div>
+          </div>
+          <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
+            <h3 className=" font-medium tracking-wide text-[11px] uppercase text-[#71717A]">
+              total count of pos commission payment
+            </h3>
+
+            <div className=" flex justify-between mt-3">
+              <h1 className=" text-[21px] font-semibold ">{formatter(1800)}</h1>
+
+              <p className=" text-green-500 font-medium tracking-wide text-xs uppercase  flex items-center gap-1">
+                +14% <BsArrowUp />
+              </p>
+            </div>
+          </div>
+          <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
+            <h3 className=" font-medium tracking-wide text-[11px] uppercase text-[#71717A]">
+              total value of pos commission payment to up
+            </h3>
+
+            <div className=" flex justify-between mt-3">
+              <h1 className=" text-[21px] font-semibold ">{formatter(350)}</h1>
+
+              <p className=" text-[#F04438] font-medium tracking-wide text-xs uppercase  flex items-center gap-1">
+                +35% <BsArrowUp />
+              </p>
+            </div>
+          </div>
+          <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
+            <h3 className=" font-medium tracking-wide text-[11px] uppercase text-[#71717A]">
+              total count of pos commission payment to up
+            </h3>
+
+            <div className=" flex justify-between mt-3">
+              <h1 className=" text-[21px] font-semibold ">
+                {formatter(33000)}
+              </h1>
 
               <p className=" text-green-500 font-medium tracking-wide text-xs uppercase  flex items-center gap-1">
                 +14% <BsArrowUp />
@@ -117,7 +202,7 @@ const Deposit = () => {
         {/* dasboard graph */}
         <div className=" lg:block p-3 bg-white w-full h-[328px] mt-8   border border-gray-200 rounded-[10px]">
           <div className=" flex justify-between items-center">
-            <h1 className=" text-base font-semibold ">Deposit</h1>
+            <h1 className=" text-base font-semibold ">Revenue</h1>
 
             <div className=" flex items-center gap-2">
               <button className=" p-3 border-gray-400 border text-xs font-semibold rounded-[10px]">
@@ -145,4 +230,4 @@ const Deposit = () => {
   );
 };
 
-export default Deposit;
+export default GatewayRevenue;

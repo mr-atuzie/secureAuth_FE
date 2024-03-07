@@ -5,7 +5,7 @@ import Siderbar from "./Siderbar";
 
 const DashboardLayout = () => {
   return (
-    <div className=" w-full  bg-green-900    ">
+    <div className=" w-full  bg-[#FAFAFB]    ">
       <Header />
       <div className=" flex h-full  bg-[#FAFAFB]   ">
         <div className=" hidden w-[20%]  lg:block  static left-0 bg-[#FAFAFB]   ">

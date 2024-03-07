@@ -1,17 +1,37 @@
-import { BsBank, BsCalculator, BsQrCodeScan } from "react-icons/bs";
+import { BsBank, BsCalculator, BsChatText, BsQrCodeScan } from "react-icons/bs";
 import { CiReceipt } from "react-icons/ci";
-import { FaRegCreditCard, FaRegUser } from "react-icons/fa";
+import {
+  FaRegCreditCard,
+  FaRegUser,
+  FaUser,
+  FaRegCommentDots,
+  FaHashtag,
+  FaEnvelope,
+} from "react-icons/fa";
 import { GrAtm } from "react-icons/gr";
 import { IoMdCard } from "react-icons/io";
-import { IoWalletOutline } from "react-icons/io5";
+import {
+  IoWalletOutline,
+  IoBagOutline,
+  IoShareSocialOutline,
+  IoImagesOutline,
+} from "react-icons/io5";
 import { LuLineChart, LuScrollText } from "react-icons/lu";
 import {
   MdMoney,
+  MdOutlineArticle,
+  MdOutlinePermMedia,
   //   MdOutlineDashboard,
   MdOutlinePhoneAndroid,
+  MdOutlineSync,
+  MdOutlineTextsms,
 } from "react-icons/md";
 import { TbArrowsTransferDown, TbCash } from "react-icons/tb";
 import { VscReferences } from "react-icons/vsc";
+import { BsWallet } from "react-icons/bs";
+import { FaRegAddressCard } from "react-icons/fa";
+import { SlLogin } from "react-icons/sl";
+import { RiUserFollowLine } from "react-icons/ri";
 
 const iconSize = 15;
 
@@ -97,45 +117,35 @@ export const links = [
     link: "/dashboard/card-payment",
   },
   {
-    head: "Pos ",
+    head: "Pos  terminal",
+    text: <BsCalculator size={iconSize} />,
+    link: "/dashboard/pos-terminal",
+  },
+  {
+    head: "Pos",
     text: <BsCalculator size={iconSize} />,
     link: "/dashboard/pos",
   },
   {
-    head: "Pos terminal",
-    text: <BsCalculator size={iconSize} />,
-    link: "/dashboard/%",
-  },
-  {
     head: "Loan",
     text: <BsCalculator size={iconSize} />,
-    link: "/dashboard/%",
-  },
-  {
-    head: "Kyc verification",
-    text: <BsCalculator size={iconSize} />,
-    link: "/dashboard/%",
-  },
-  {
-    head: "KYC verification",
-    text: <BsCalculator size={iconSize} />,
-    link: "/dashboard/%",
+    link: "/dashboard/loan",
   },
   {
     head: "SMS",
-    text: <BsCalculator size={iconSize} />,
-    link: "/dashboard/%",
+    text: <MdOutlineTextsms size={iconSize} />,
+    link: "/dashboard/sms",
   },
   {
     head: "Account creation and login",
-    text: <BsCalculator size={iconSize} />,
-    link: "/dashboard/%",
+    text: <SlLogin size={iconSize} />,
+    link: "/dashboard/account-creation",
   },
-  {
-    head: "Profiling",
-    text: <BsCalculator size={iconSize} />,
-    link: "/dashboard/%",
-  },
+  // {
+  //   head: "Profiling",
+  //   text: <FaUser size={iconSize} />,
+  //   link: "/dashboard/%",
+  // },
 ];
 
 export const gatewayLinks = [
@@ -147,47 +157,47 @@ export const gatewayLinks = [
   {
     head: "Commission Payment",
     text: <MdMoney size={iconSize} />,
-    link: "/dashboard/commission-payment",
+    link: "/payment-gateway/commission-payment",
   },
   {
     head: "Revenue",
     text: <LuLineChart size={iconSize} />,
-    link: "/dashboard/revenue",
+    link: "/payment-gateway/revenue",
   },
   {
     head: "Invoicing",
     text: <LuScrollText size={iconSize} />,
-    link: "/dashboard/invoicing",
+    link: "/payment-gateway/invoicing",
   },
   {
     head: "Payment page terminal",
-    text: <IoMdCard size={iconSize} />,
-    link: "/dashboard/card-payment",
+    text: <GrAtm size={iconSize} />,
+    link: "/payment-gateway/payment-terminal",
   },
   {
     head: "Payment page",
-    text: <IoMdCard size={iconSize} />,
-    link: "/dashboard/card-payment",
+    text: <BsWallet size={iconSize} />,
+    link: "/payment-gateway/card-payment",
   },
   {
     head: "KYC verification",
-    text: <BsCalculator size={iconSize} />,
-    link: "/dashboard/%",
+    text: <FaRegAddressCard size={iconSize} />,
+    link: "/payment-gateway/%",
   },
   {
     head: "SMS",
-    text: <BsCalculator size={iconSize} />,
-    link: "/dashboard/%",
+    text: <MdOutlineTextsms size={iconSize} />,
+    link: "/payment-gateway/%",
   },
   {
     head: "Account creation and login",
-    text: <BsCalculator size={iconSize} />,
-    link: "/dashboard/%",
+    text: <SlLogin size={iconSize} />,
+    link: "/payment-gateway/%",
   },
   {
     head: "Profiling",
-    text: <BsCalculator size={iconSize} />,
-    link: "/dashboard/%",
+    text: <FaUser size={iconSize} />,
+    link: "/payment-gateway/%",
   },
 ];
 
@@ -209,67 +219,140 @@ export const marketplaceLinks = [
   },
   {
     head: "Product",
-    text: <LuScrollText size={iconSize} />,
+    text: <IoBagOutline size={iconSize} />,
     link: "/dashboard/invoicing",
   },
   {
     head: "Share",
-    text: <IoMdCard size={iconSize} />,
+    text: <IoShareSocialOutline size={iconSize} />,
     link: "/dashboard/card-payment",
   },
   {
     head: "Comment",
-    text: <IoMdCard size={iconSize} />,
+    text: <FaRegCommentDots size={iconSize} />,
     link: "/dashboard/card-payment",
   },
   {
     head: "hashtags",
-    text: <BsCalculator size={iconSize} />,
+    text: <FaHashtag size={iconSize} />,
     link: "/dashboard/%",
   },
   {
     head: "Synchronization",
-    text: <BsCalculator size={iconSize} />,
+    text: <MdOutlineSync size={iconSize} />,
     link: "/dashboard/%",
   },
   {
-    head: "follow",
-    text: <BsCalculator size={iconSize} />,
+    head: "Follow",
+    text: <RiUserFollowLine size={iconSize} />,
     link: "/dashboard/%",
   },
   {
     head: "Post",
-    text: <BsCalculator size={iconSize} />,
+    text: <MdOutlineArticle size={iconSize} />,
     link: "/dashboard/%",
   },
   {
     head: "Media",
-    text: <BsCalculator size={iconSize} />,
+    text: <MdOutlinePermMedia size={iconSize} />,
     link: "/dashboard/%",
   },
   {
     head: "Image",
-    text: <BsCalculator size={iconSize} />,
+    text: <IoImagesOutline size={iconSize} />,
     link: "/dashboard/%",
   },
   {
     head: "Chat",
+    text: <BsChatText size={iconSize} />,
+    link: "/dashboard/%",
+  },
+  {
+    head: "KYC verification",
+    text: <FaRegAddressCard size={iconSize} />,
+    link: "/dashboard/%",
+  },
+  {
+    head: "SMS",
+    text: <FaEnvelope size={iconSize} />,
+    link: "/dashboard/%",
+  },
+  {
+    head: "Account creation and login",
+    text: <SlLogin size={iconSize} />,
+    link: "/dashboard/%",
+  },
+];
+
+export const groupLinks = [
+  {
+    head: "User",
+    text: <FaRegUser size={iconSize} />,
+    link: "/dashboard/user",
+  },
+  {
+    head: "Deposit",
+    text: <IoWalletOutline size={iconSize} />,
+    link: "/dashboard/deposit",
+  },
+  {
+    head: "NIP",
+    text: <BsBank size={iconSize} />,
+    link: "/dashboard/nip",
+  },
+  {
+    head: "Transfer",
+    text: <TbArrowsTransferDown size={iconSize} />,
+    link: "/dashboard/transfer",
+  },
+  {
+    head: "Withdraw",
+    text: <GrAtm size={iconSize} />,
+    link: "/dashboard/withdraw",
+  },
+  {
+    head: "Referral",
+    text: <VscReferences size={iconSize} />,
+    link: "/dashboard/referral",
+  },
+  {
+    head: "Commission Payment",
+    text: <MdMoney size={iconSize} />,
+    link: "/dashboard/commission-payment",
+  },
+  {
+    head: "Revenue",
+    text: <LuLineChart size={iconSize} />,
+    link: "/dashboard/revenue",
+  },
+  {
+    head: "Atm card",
+    text: <FaRegCreditCard size={iconSize} />,
+    link: "/dashboard/atm-card",
+  },
+  {
+    head: "Pos terminal",
+    text: <BsCalculator size={iconSize} />,
+    link: "/dashboard/%",
+  },
+  {
+    head: "Kyc verification",
     text: <BsCalculator size={iconSize} />,
     link: "/dashboard/%",
   },
   {
     head: "SMS",
-    text: <BsCalculator size={iconSize} />,
+    text: <MdOutlineTextsms size={iconSize} />,
     link: "/dashboard/%",
   },
   {
     head: "Account creation and login",
-    text: <BsCalculator size={iconSize} />,
+    text: <SlLogin size={iconSize} />,
     link: "/dashboard/%",
   },
   {
     head: "Profiling",
-    text: <BsCalculator size={iconSize} />,
+    text: <FaUser size={iconSize} />,
     link: "/dashboard/%",
   },
 ];

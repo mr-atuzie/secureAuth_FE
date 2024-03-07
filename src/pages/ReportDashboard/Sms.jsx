@@ -1,12 +1,11 @@
 import React from "react";
 import { BsArrowUp } from "react-icons/bs";
-import { FaRegFilePdf } from "react-icons/fa";
 import { formatter } from "../../utils";
 import filter from "../../assets/filter.png";
 import { IoIosAddCircleOutline } from "react-icons/io";
 import { Link } from "react-router-dom";
 
-const DashboardUser = () => {
+const Sms = () => {
   return (
     <>
       <section className=" font2 w-full min-h-screen">
@@ -34,8 +33,8 @@ const DashboardUser = () => {
         {/* dasboard card */}
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
-            <h3 className=" font-medium tracking-wide text-xs uppercase text-[#71717A]">
-              Number of users
+            <h3 className=" font-medium tracking-wide text-[11px] uppercase text-[#71717A]">
+              count of total successful sms sent
             </h3>
 
             <div className=" flex justify-between mt-3">
@@ -46,9 +45,10 @@ const DashboardUser = () => {
               </p>
             </div>
           </div>
+
           <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
-            <h3 className=" font-medium tracking-wide text-xs uppercase text-[#71717A]">
-              Number of active users
+            <h3 className=" font-medium tracking-wide text-[11px] text-xs uppercase text-[#71717A]">
+              count of total unsuccessful sms sent
             </h3>
 
             <div className=" flex justify-between mt-3">
@@ -59,9 +59,10 @@ const DashboardUser = () => {
               </p>
             </div>
           </div>
+
           <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
-            <h3 className=" font-medium tracking-wide text-xs uppercase text-[#71717A]">
-              Number of inactive users
+            <h3 className=" font-medium tracking-wide text-[11px] uppercase text-[#71717A]">
+              count of successful phone verification sms
             </h3>
 
             <div className=" flex justify-between mt-3">
@@ -72,9 +73,10 @@ const DashboardUser = () => {
               </p>
             </div>
           </div>
+
           <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
-            <h3 className=" font-medium tracking-wide text-xs uppercase text-[#71717A]">
-              total customers
+            <h3 className=" font-medium tracking-wide text-[11px] uppercase text-[#71717A]">
+              count of unsuccessful phone verification sms
             </h3>
 
             <div className=" flex justify-between mt-3">
@@ -87,9 +89,10 @@ const DashboardUser = () => {
               </p>
             </div>
           </div>
+
           <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
-            <h3 className=" font-medium tracking-wide text-xs uppercase text-[#71717A]">
-              Number of users
+            <h3 className=" font-medium tracking-wide text-[11px] uppercase text-[#71717A]">
+              count of successful and unsuccessful
             </h3>
 
             <div className=" flex justify-between mt-3">
@@ -100,9 +103,10 @@ const DashboardUser = () => {
               </p>
             </div>
           </div>
+
           <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
-            <h3 className=" font-medium tracking-wide text-xs uppercase text-[#71717A]">
-              Number of active users
+            <h3 className=" font-medium tracking-wide text-[11px] uppercase text-[#71717A]">
+              count of successful and unsuccessful
             </h3>
 
             <div className=" flex justify-between mt-3">
@@ -113,9 +117,10 @@ const DashboardUser = () => {
               </p>
             </div>
           </div>
+
           <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
-            <h3 className=" font-medium tracking-wide text-xs uppercase text-[#71717A]">
-              Number of inactive users
+            <h3 className=" font-medium tracking-wide text-[11px] uppercase text-[#71717A]">
+              count of successful and unsuccessful BVN sms
             </h3>
 
             <div className=" flex justify-between mt-3">
@@ -126,9 +131,54 @@ const DashboardUser = () => {
               </p>
             </div>
           </div>
+
           <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
-            <h3 className=" font-medium tracking-wide text-xs uppercase text-[#71717A]">
-              total customers
+            <h3 className=" font-medium tracking-wide text-[11px] uppercase text-[#71717A]">
+              count of successful and unsuccessful Password reset
+            </h3>
+
+            <div className=" flex justify-between mt-3">
+              <h1 className=" text-[21px] font-semibold ">
+                {formatter(33000)}
+              </h1>
+
+              <p className=" text-green-500 font-medium tracking-wide text-xs uppercase  flex items-center gap-1">
+                +14% <BsArrowUp />
+              </p>
+            </div>
+          </div>
+
+          <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
+            <h3 className=" font-medium tracking-wide text-[11px] uppercase text-[#71717A]">
+              count of successful and unsuccessful PIN creation
+            </h3>
+
+            <div className=" flex justify-between mt-3">
+              <h1 className=" text-[21px] font-semibold ">{formatter(1800)}</h1>
+
+              <p className=" text-green-500 font-medium tracking-wide text-xs uppercase  flex items-center gap-1">
+                +14% <BsArrowUp />
+              </p>
+            </div>
+          </div>
+
+          <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
+            <h3 className=" font-medium tracking-wide text-[11px] uppercase text-[#71717A]">
+              count of successful and unsuccessful PIn reset
+            </h3>
+
+            <div className=" flex justify-between mt-3">
+              <h1 className=" text-[21px] font-semibold ">{formatter(350)}</h1>
+
+              <p className=" text-[#F04438] font-medium tracking-wide text-xs uppercase  flex items-center gap-1">
+                +35% <BsArrowUp />
+              </p>
+            </div>
+          </div>
+
+          <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
+            <h3 className=" font-medium tracking-wide text-[11px] uppercase text-[#71717A]">
+              Count of account created Successfully (OTP SMS)
             </h3>
 
             <div className=" flex justify-between mt-3">
@@ -144,34 +194,9 @@ const DashboardUser = () => {
         </div>
 
         {/* dasboard graph */}
-        <div className=" hidden lg:block p-3 bg-white w-[797px] h-[328px] mt-8   border border-gray-200 rounded-[10px]">
-          <div className=" flex justify-between items-center">
-            <h1 className=" text-base font-semibold ">User Report</h1>
-
-            <div className=" flex items-center gap-2">
-              <button className=" p-3 border-gray-400 border text-xs font-semibold rounded-[10px]">
-                12 months
-              </button>
-              <button className=" p-3 text-gray-500  text-xs font-semibold rounded-[10px]">
-                6 months
-              </button>
-              <button className=" p-3 text-gray-500  text-xs font-semibold rounded-[10px]">
-                30 Days
-              </button>
-              <button className=" p-3 text-gray-500  text-xs font-semibold rounded-[10px]">
-                7 Days
-              </button>
-            </div>
-
-            <button className=" p-2 border-gray-400 border flex items-center gap-1 text-xs font-semibold rounded-[10px]">
-              <FaRegFilePdf size={20} />
-              Export PDF
-            </button>
-          </div>
-        </div>
       </section>
     </>
   );
 };
 
-export default DashboardUser;
+export default Sms;

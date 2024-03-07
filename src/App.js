@@ -40,6 +40,14 @@ import MarketplaceLayout from "./components/MarketplaceLayout";
 import MarketUser from "./pages/MarketplaceDashboard/MarketUser";
 import GroupLayout from "./components/GroupLayout";
 import GroupUser from "./pages/GroupDashboard/GroupUser";
+import PosTerminal from "./pages/ReportDashboard/PosTerminal";
+import Loan from "./pages/ReportDashboard/Loan";
+import Sms from "./pages/ReportDashboard/Sms";
+import AccountCreation from "./pages/ReportDashboard/AccountCreation";
+import GatewayCommission from "./pages/GatewayDasboard/GatewayCommission";
+import GatewayRevenue from "./pages/GatewayDasboard/GatewayRevenue";
+import GatewayInvoice from "./pages/GatewayDasboard/GatewayInvoice";
+import GatewayPaymentTerminal from "./pages/GatewayDasboard/GatewayPaymentTerminal";
 
 function App() {
   return (
@@ -84,7 +92,11 @@ function App() {
           <Route path="card-payment" element={<CardPayment />} />
           <Route path="scan" element={<Scan />} />
           <Route path="ussd" element={<Ussd />} />
+          <Route path="pos-terminal" element={<PosTerminal />} />
           <Route path="pos" element={<Pos />} />
+          <Route path="loan" element={<Loan />} />
+          <Route path="sms" element={<Sms />} />
+          <Route path="account-creation" element={<AccountCreation />} />
           <Route path="generate-report" element={<GenerateReportForm />} />
           <Route
             path="generate-report-table"
@@ -94,6 +106,18 @@ function App() {
 
         <Route path="/payment-gateway" element={<GatewayLayout />}>
           <Route path="user" index element={<User />} />
+          <Route
+            path="commission-payment"
+            index
+            element={<GatewayCommission />}
+          />
+          <Route path="revenue" index element={<GatewayRevenue />} />
+          <Route path="invoicing" index element={<GatewayInvoice />} />
+          <Route
+            path="payment-terminal"
+            index
+            element={<GatewayPaymentTerminal />}
+          />
         </Route>
 
         <Route path="/marketplace" element={<MarketplaceLayout />}>

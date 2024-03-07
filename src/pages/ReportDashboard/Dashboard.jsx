@@ -11,7 +11,8 @@ const Dashboard = () => {
       <section className=" font2 w-full min-h-screen">
         <div className=" w-full flex justify-between  items-end mb-3">
           <h1 className=" text-sm lg:text-base font-semibold  ">
-            Hey David Okulola -
+            Hey David Okulola -{" "}
+            <span className=" text-[#71717A]">Welcome Back!</span>
           </h1>
 
           <Link to={"/dashboard/add-user/option"}>
