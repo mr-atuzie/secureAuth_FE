@@ -205,7 +205,7 @@ export const marketplaceLinks = [
   {
     head: "User",
     text: <FaRegUser size={iconSize} />,
-    link: "/marketplace/user",
+    link: "/dashboard/user",
   },
   {
     head: "Commission Payment",
@@ -225,7 +225,7 @@ export const marketplaceLinks = [
   {
     head: "Share",
     text: <IoShareSocialOutline size={iconSize} />,
-    link: "/dashboard/card-payment",
+    link: "/dashboard/ussd",
   },
   {
     head: "Comment",
@@ -235,52 +235,52 @@ export const marketplaceLinks = [
   {
     head: "hashtags",
     text: <FaHashtag size={iconSize} />,
-    link: "/dashboard/%",
+    link: "/dashboard/invoicing",
   },
   {
     head: "Synchronization",
     text: <MdOutlineSync size={iconSize} />,
-    link: "/dashboard/%",
+    link: "/dashboard/bill-payment",
   },
   {
     head: "Follow",
     text: <RiUserFollowLine size={iconSize} />,
-    link: "/dashboard/%",
+    link: "/dashboard/scan",
   },
   {
     head: "Post",
     text: <MdOutlineArticle size={iconSize} />,
-    link: "/dashboard/%",
+    link: "/dashboard/nip",
   },
   {
     head: "Media",
     text: <MdOutlinePermMedia size={iconSize} />,
-    link: "/dashboard/%",
+    link: "/dashboard/atm-card",
   },
   {
     head: "Image",
     text: <IoImagesOutline size={iconSize} />,
-    link: "/dashboard/%",
+    link: "/dashboard/commission-payment",
   },
   {
     head: "Chat",
     text: <BsChatText size={iconSize} />,
-    link: "/dashboard/%",
+    link: "/dashboard/loan",
   },
   {
     head: "KYC verification",
     text: <FaRegAddressCard size={iconSize} />,
-    link: "/dashboard/%",
+    link: "/payment-gateway/kyc",
   },
   {
     head: "SMS",
     text: <FaEnvelope size={iconSize} />,
-    link: "/dashboard/%",
+    link: "/dashboard/sms",
   },
   {
     head: "Account creation and login",
     text: <SlLogin size={iconSize} />,
-    link: "/dashboard/%",
+    link: "/dashboard/account-creation",
   },
 ];
 
@@ -333,26 +333,26 @@ export const groupLinks = [
   {
     head: "Pos terminal",
     text: <BsCalculator size={iconSize} />,
-    link: "/dashboard/%",
+    link: "/dashboard/pos-terminal",
   },
   {
     head: "Kyc verification",
     text: <BsCalculator size={iconSize} />,
-    link: "/dashboard/%",
+    link: "/payment-gateway/kyc",
   },
   {
     head: "SMS",
     text: <MdOutlineTextsms size={iconSize} />,
-    link: "/dashboard/%",
+    link: "/dashboard/sms",
   },
   {
     head: "Account creation and login",
     text: <SlLogin size={iconSize} />,
-    link: "/dashboard/%",
+    link: "/dashboard/account-creation",
   },
   {
     head: "Profiling",
     text: <FaUser size={iconSize} />,
-    link: "/dashboard/%",
+    link: "/dashboard/pos",
   },
 ];
