@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsArrowUp } from "react-icons/bs";
 import { formatter } from "../../utils";
 import arrow from "../../assets/table.png";
+// import DashboardHeader from "../../components/DashboardHeader";
 import DashboardHeader from "../../components/DashboardHeader";
+import FilterModal from "../../components/FilterModal";
 
 const AccountCreation = () => {
   const reports = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+  const [modal, setModal] = useState(false);
   return (
     <>
       <section className=" font2 w-full min-h-screen">
-        <DashboardHeader />
-
+        {modal && <FilterModal setModal={setModal} modal={modal} />}
+        <DashboardHeader setModal={setModal} modal={modal} />
         {/* dasboard card */}
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">

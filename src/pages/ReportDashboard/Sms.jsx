@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsArrowUp } from "react-icons/bs";
 import { formatter } from "../../utils";
 import DashboardHeader from "../../components/DashboardHeader";
+import FilterModal from "../../components/FilterModal";
 
 const Sms = () => {
+  const [modal, setModal] = useState(false);
   return (
     <>
       <section className=" font2 w-full min-h-screen">
-        <DashboardHeader />
-
+        {modal && <FilterModal setModal={setModal} modal={modal} />}
+        <DashboardHeader setModal={setModal} modal={modal} />
         {/* dasboard card */}
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className=" p-3 bg-white   border border-gray-200 rounded-[10px]">
