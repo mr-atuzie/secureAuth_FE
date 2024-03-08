@@ -6,7 +6,7 @@ import { IoIosArrowBack } from "react-icons/io";
 const AddUserSuccess = () => {
   const navigate = useNavigate();
   return (
-    <div className=" font2 relative flex justify-center items-center">
+    <div className=" font2 h-full relative flex justify-center items-center">
       <button
         onClick={() => navigate(-1)}
         className=" text-sm lg:text-base  flex font-semibold absolute top-2 left-2 items-center justify-center gap-2 "
@@ -15,7 +15,7 @@ const AddUserSuccess = () => {
 
         <span className=" underline"> Back</span>
       </button>
-      <div className=" w-[90%] lg:w-[40%] h-[150px] lg:h-[300px] p-2 bg-white shadow-sm flex justify-center items-center flex-col">
+      <div className=" w-[90%] lg:w-[40%] h-[150px] lg:h-[300px] mt-20 p-2 bg-white shadow-sm flex justify-center items-center flex-col">
         <div className=" lg:w-[60px] w-[30px] h-[30px] lg:h-[60px] flex justify-center items-center bg-[#FFEFEA] rounded-full">
           <TiUserAdd size={25} className=" text-[#FF5D2E]" />
         </div>

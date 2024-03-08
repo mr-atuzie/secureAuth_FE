@@ -1,17 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from "../assets/logo.png";
 import { GoSearch } from "react-icons/go";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdOutlineClose } from "react-icons/md";
-import { links } from "../data";
-import { NavLink } from "react-router-dom";
 
-const Header = () => {
-  const [menu, setMenu] = useState(false);
-
-  console.log(menu);
-
+const Header = ({ setMenu, menu }) => {
   return (
     <nav>
       <header className=" bg-white w-full h-[61px] flex justify-between items-center px-[20px] py-[8px] lg:px-[42px] lg:py-[16px]">
@@ -51,7 +45,7 @@ const Header = () => {
           />
           <button
             onClick={() => setMenu(!menu)}
-            className=" border shadow-md p-1 rounded-md lg:hidden z-50"
+            className=" border shadow-md p-1 bg-white rounded-md lg:hidden z-50"
           >
             {menu ? (
               <MdOutlineClose size={25} />
@@ -61,37 +55,6 @@ const Header = () => {
           </button>
         </div>
       </header>
-      {menu && (
-        <div className=" w-full z-40 fixed top-0 left-0 bg-black/30 lg:hidden">
-          <div className=" py-10  w-[70%] bg-[#FAFAFB] ">
-            <div className=" w-full h-full lg:my-[70px]">
-              {links.map((link, index) => {
-                return (
-                  <NavLink
-                    key={index}
-                    to={link.link}
-                    className={({ isActive }) =>
-                      isActive
-                        ? "  text-[#FF5D2E] rounded font-semibold  bg-[#FFEFEA] block w-full"
-                        : " text-[#8C8C8C]"
-                    }
-                  >
-                    <div
-                      onClick={() => setMenu(false)}
-                      className="flex gap-3 w-full  items-center px-6  py-3"
-                    >
-                      <div className="  ">{link.text}</div>
-                      <p className="font-medium text-[13px]  font2  ">
-                        {link.head}
-                      </p>
-                    </div>
-                  </NavLink>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      )}
     </nav>
   );
 };
