@@ -21,7 +21,7 @@ const MarketplaceLayout = () => {
         </div>
       </div>
       {menu && (
-        <div className=" w-full z-40 fixed top-0 left-0 bg-black/30 lg:hidden">
+        <div className=" w-full  min-h-screen z-40 fixed top-0 left-0 bg-black/30 lg:hidden">
           <div className=" py-10  w-[70%] bg-[#FAFAFB] ">
             <div className=" w-full h-full lg:my-[70px]">
               {marketplaceLinks.map((link, index) => {
