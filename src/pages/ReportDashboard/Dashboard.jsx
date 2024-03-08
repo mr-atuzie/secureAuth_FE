@@ -11,12 +11,12 @@ const Dashboard = () => {
       <section className=" font2 w-full min-h-screen">
         <div className=" w-full flex justify-between  items-end mb-3">
           <h1 className=" text-sm lg:text-base font-semibold  ">
-            Hey David Okulola -{" "}
-            <span className=" text-[#71717A]">Welcome Back!</span>
+            Hey David Okulola - <br className=" lg:hidden" />
+            <span className="  text-[#71717A]">Welcome Back!</span>
           </h1>
 
-          <Link to={"/dashboard/add-user/option"}>
-            <button className=" text-sm lg:text-base bg-[#FF5D2E] font-semibold py-[6px] lg:py-[12px] px-[8px] lg:px-[16px] text-white flex justify-center items-center gap-2 rounded-[12px]">
+          <Link className=" hidden lg:block" to={"/dashboard/add-user/option"}>
+            <button className=" text-sm lg:text-base bg-[#FF5D2E] font-semibold  p-2 lg:py-[12px]  lg:px-[16px] text-white flex justify-center items-center gap-2 rounded-[12px]">
               <TiUserAdd size={20} />
               Add a user
             </button>
