@@ -7,7 +7,7 @@ import { gatewayLinks } from "../data";
 const GatewayLayout = () => {
   const [menu, setMenu] = useState(false);
   return (
-    <div className=" w-full  bg-[#FAFAFB]    ">
+    <div className=" w-full  bg-[#FAFAFB]   relative ">
       <Header menu={menu} setMenu={setMenu} />
       <div className=" flex h-full  bg-[#FAFAFB]   ">
         <div className=" hidden w-[20%]  lg:block  static left-0 bg-[#FAFAFB]   ">
@@ -21,8 +21,8 @@ const GatewayLayout = () => {
         </div>
       </div>
       {menu && (
-        <div className=" w-full min-h-screen z-40 fixed top-0 left-0 bg-black/30 lg:hidden">
-          <div className=" py-10  w-[70%] bg-[#FAFAFB] ">
+        <div className=" w-full min-h-screen   z-40  absolute  top-0 left-0 bottom-0 bg-black/30 lg:hidden">
+          <div className=" py-10 min-h-screen overflow-y-scroll w-[70%] bg-[#FAFAFB] ">
             <div className=" w-full h-full lg:my-[70px]">
               {gatewayLinks.map((link, index) => {
                 return (
