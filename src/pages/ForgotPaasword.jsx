@@ -38,7 +38,7 @@ const ForgotPaasword = () => {
           </div>
 
           <button
-            onClick={() => navigate("/reset-email")}
+            onClick={() => navigate("/reset-password")}
             className=" w-full mt-10 px-[24px] rounded-[12px] py-[16px] font-semibold bg-[#FF5D2E]  text-white justify-center items-center flex gap-4"
           >
             Send reset Instruction

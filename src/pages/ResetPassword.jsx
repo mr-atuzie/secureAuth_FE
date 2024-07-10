@@ -6,7 +6,7 @@ const ResetPassword = () => {
   const navigate = useNavigate();
   return (
     <div className=" w-full min-h-screen bg-[#F7F9FC] flex justify-center  items-center mx-auto ">
-      <div className=" h-[476px] w-[456px] ">
+      <div className=" h-[476px] w-[456px] bg-white border shadow-md rounded-xl ">
         <form className=" w-full h-full  py-[32px] px-[28px]  ">
           <h1 className=" font3 text-[20px] lg:text-[28px] font-medium text-center">
             Reset Password
@@ -20,12 +20,12 @@ const ResetPassword = () => {
           "
           >
             <label
-              className=" tracking-wide capitalize text-xs font-medium "
+              className=" tracking-wide capitalize text-xs lg:text-sm font-medium "
               htmlFor="password"
             >
               new password
             </label>
-            <div className=" bg-white w-full flex justify-center items-center border border-[#FCB59A] p-3.5  rounded-md">
+            <div className=" bg-white w-full -mt-1 flex justify-center items-center border-2 border-[#FCB59A] p-3.5  rounded-md">
               <input
                 className=" w-full outline-none border-none placeholder:font-normal placeholder:text-sm placeholder:text-gray-400 "
                 placeholder="Enter your new password"
@@ -33,7 +33,7 @@ const ResetPassword = () => {
                 name="password"
                 id="password"
               />
-              <RiEyeCloseLine size={20} className=" text-gray-500" />
+              <RiEyeCloseLine size={15} className=" text-gray-500" />
             </div>
           </div>
 
@@ -42,12 +42,12 @@ const ResetPassword = () => {
           "
           >
             <label
-              className=" tracking-wide capitalize text-xs font-medium "
+              className=" tracking-wide capitalize text-xs lg:text-sm font-medium "
               htmlFor="password"
             >
               confirm password
             </label>
-            <div className=" bg-white w-full flex justify-center items-center border border-[#FCB59A] p-3.5  rounded-md">
+            <div className=" bg-white w-full flex justify-center items-center border-2 border-[#FCB59A] p-3.5  rounded-md">
               <input
                 className=" w-full outline-none border-none placeholder:font-normal placeholder:text-sm placeholder:text-gray-400 "
                 placeholder="Confirm your new password"
@@ -55,7 +55,7 @@ const ResetPassword = () => {
                 name="password"
                 id="password"
               />
-              <RiEyeCloseLine size={20} className=" text-gray-500" />
+              <RiEyeCloseLine size={15} className=" text-gray-500" />
             </div>
           </div>
 
