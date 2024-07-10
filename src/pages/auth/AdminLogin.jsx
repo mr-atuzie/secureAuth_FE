@@ -1,11 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaRegEyeSlash } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
+import axios from "axios";
 
 const AdminLogin = () => {
   const navigate = useNavigate();
+  const is = {
+    email: "",
+    password: "",
+  };
+
+  const [userData, setUserData] = useState(is);
+
+  const handleInputChange = (e) => {
+    const { value, name } = e.target;
+
+    setUserData({ ...userData, [name]: value });
+  };
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    const API_URL = `${process.env.RREACT_APP_BACKEND_URL}/auth-service/api/v1/auth/generate-login-otp`;
+    try {
+      const res = await axios.post(API_URL, { email: userData.email });
+
+      console.log(res.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div className=" w-full min-h-screen bg-[#F7F9FC] flex justify-center  items-center mx-auto ">
       <button
@@ -17,7 +43,10 @@ const AdminLogin = () => {
       </button>
 
       <div className=" h-[476px] w-[90%] lg:w-[456px] ">
-        <form className=" bg-white w-full h-full border border-[#D0D5DD] p-5 lg:py-[32px] lg:px-[28px] shadow-md rounded-xl ">
+        <form
+          onSubmit={handleLogin}
+          className=" bg-white w-full h-full border border-[#D0D5DD] p-5 lg:py-[32px] lg:px-[28px] shadow-md rounded-xl "
+        >
           <h1 className=" text-[20px] lg:text-[28px] font-medium text-center">
             Login in as Admin
           </h1>
@@ -42,6 +71,7 @@ const AdminLogin = () => {
                 type="email"
                 name="email"
                 id="email"
+                onChange={handleInputChange}
               />
               <MdOutlineEmail size={20} className=" text-gray-500 " />
             </div>
@@ -64,6 +94,7 @@ const AdminLogin = () => {
                 type="password"
                 name="password"
                 id="password"
+                onChange={handleInputChange}
               />
               <FaRegEyeSlash size={20} className=" text-gray-500" />
             </div>
@@ -76,7 +107,8 @@ const AdminLogin = () => {
           </Link>
 
           <button
-            onClick={() => navigate("/dashboard/main")}
+            type="submit"
+            // onClick={() => navigate("/dashboard/main")}
             className=" w-full mt-8 px-[24px] rounded-[12px] py-[12px] lg:py-[16px] font-semibold bg-[#FF5D2E]  text-white justify-center items-center flex gap-4"
           >
             Log into Dashboard

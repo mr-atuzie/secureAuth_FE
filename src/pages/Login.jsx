@@ -1,25 +1,25 @@
 import React from "react";
-import { MdOutlineEmail } from "react-icons/md";
-import { FaRegEyeSlash } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
+import { Link } from "react-router-dom";
 
-const PaymentGatewayLogin = () => {
-  const navigate = useNavigate();
+const Login = () => {
   return (
     <div className=" w-full min-h-screen bg-[#F7F9FC] flex justify-center  items-center mx-auto ">
       <button
-        onClick={() => navigate(-1)}
-        className=" fixed flex font-semibold items-center justify-center gap-2 top-2 left-2 lg:top-8  lg:left-8"
+        // onClick={() => navigate(-1)}
+        className="  text-sm lg:text-base fixed flex font-semibold items-center justify-center gap-2 top-2 left-2 lg:top-8  lg:left-8"
       >
         <IoIosArrowBack />
         Go back
       </button>
 
       <div className=" h-[476px] w-[90%] lg:w-[456px] ">
-        <form className=" bg-white w-full h-full border border-[#D0D5DD] p-5 lg:py-[32px] lg:px-[28px] shadow-md rounded-xl ">
+        <form
+          //   onSubmit={handleLogin}
+          className=" bg-white w-full h-full border border-[#D0D5DD] p-5 lg:py-[32px] lg:px-[28px] shadow-md rounded-xl "
+        >
           <h1 className=" text-[20px] lg:text-[28px] font-medium text-center">
-            Login in into Payment Gateway
+            Login in as Admin
           </h1>
           <p className=" text-xs lg:text-base text-[#667185] text-center">
             Enter your credentials to access your dashboard
@@ -35,15 +35,16 @@ const PaymentGatewayLogin = () => {
             >
               email address
             </label>
-            <div className=" w-full flex justify-center items-center border hover:border-[#FCB59A] p-3.5   rounded-md">
+            <div className=" w-full flex justify-center items-center border hover:border-[#FCB59A] border-[#D0D5DD] p-3.5  rounded-md">
               <input
-                className=" w-full outline-none border-none placeholder:font-normal placeholder:text-sm placeholder:text-gray-400 "
+                className=" w-full h-full  border outline-none border-none  placeholder:font-normal placeholder:text-sm placeholder:text-gray-400 "
                 placeholder="Enter your work email address"
                 type="email"
                 name="email"
                 id="email"
+                // onChange={handleInputChange}
               />
-              <MdOutlineEmail size={20} className=" text-gray-500" />
+              {/* <MdOutlineEmail size={20} className=" text-gray-500 " /> */}
             </div>
           </div>
 
@@ -57,15 +58,16 @@ const PaymentGatewayLogin = () => {
             >
               Password
             </label>
-            <div className=" w-full flex justify-center items-center border p-3.5  hover:border-[#FCB59A] rounded-md">
+            <div className=" w-full flex justify-center items-center border hover:border-[#FCB59A]  p-3.5  rounded-md">
               <input
                 className=" w-full outline-none border-none placeholder:font-normal placeholder:text-sm placeholder:text-gray-400 "
                 placeholder="Enter password"
                 type="password"
                 name="password"
                 id="password"
+                // onChange={handleInputChange}
               />
-              <FaRegEyeSlash size={20} className=" text-gray-500" />
+              {/* <FaRegEyeSlash size={20} className=" text-gray-500" /> */}
             </div>
           </div>
 
@@ -76,7 +78,8 @@ const PaymentGatewayLogin = () => {
           </Link>
 
           <button
-            onClick={() => navigate("/payment-gateway/user")}
+            type="submit"
+            // onClick={() => navigate("/dashboard/main")}
             className=" w-full mt-8 px-[24px] rounded-[12px] py-[12px] lg:py-[16px] font-semibold bg-[#FF5D2E]  text-white justify-center items-center flex gap-4"
           >
             Log into Dashboard
@@ -87,4 +90,4 @@ const PaymentGatewayLogin = () => {
   );
 };
 
-export default PaymentGatewayLogin;
+export default Login;
