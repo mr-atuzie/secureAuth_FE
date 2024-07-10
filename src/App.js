@@ -4,6 +4,7 @@ import ScrollTop from "./components/ScrollTop";
 import ForgotPaasword from "./pages/ForgotPaasword";
 import ResetPassword from "./pages/ResetPassword";
 import Register from "./pages/Register";
+import VerifyEmail from "./pages/VerifyEmail";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/verify-email" element={<VerifyEmail />} />
         <Route path="/forgot-password" element={<ForgotPaasword />} />
         <Route path="/reset-password" element={<ResetPassword />} />
       </Routes>

@@ -67,13 +67,15 @@ const Login = () => {
             </p>
           </Link>
 
-          <button
-            // type="submit"
-            // onClick={() => navigate("/dashboard/main")}
-            className=" w-full mt-8 px-[24px] rounded-[12px] py-[12px] lg:py-[16px] font-semibold bg-[#FF5D2E]  text-white justify-center items-center flex gap-4"
-          >
-            Login
-          </button>
+          <Link to="/verify-email">
+            <button
+              // type="submit"
+              // onClick={() => navigate("/dashboard/main")}
+              className=" w-full mt-8 px-[24px] rounded-[12px] py-[12px] lg:py-[16px] font-semibold bg-[#FF5D2E]  text-white justify-center items-center flex gap-4"
+            >
+              Login
+            </button>
+          </Link>
 
           <Link to={"/"}>
             <p className=" text-sm text-center  my-4">
