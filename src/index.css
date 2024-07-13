@@ -6,6 +6,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.otp-container {
+  @apply flex justify-center items-center;
+}
+.otp-container input {
+  @apply flex-1 w-full py-5 rounded bg-gray-200 border-2 border-gray-300;
+}
+
 @layer base {
   html {
     font-family: "Inter", sans-serif;

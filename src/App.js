@@ -5,11 +5,16 @@ import ForgotPaasword from "./pages/ForgotPaasword";
 import ResetPassword from "./pages/ResetPassword";
 import Register from "./pages/Register";
 import VerifyEmail from "./pages/VerifyEmail";
+import { Toaster } from "react-hot-toast";
+import axios from "axios";
 
+axios.defaults.withCredentials = true;
+axios.defaults.baseURL = process.env.REACT_APP_BACKEND_URL;
 function App() {
   return (
     <BrowserRouter>
       <ScrollTop />
+      <Toaster />
       <Routes>
         <Route path="/" element={<Register />} />
         <Route path="/login" element={<Login />} />

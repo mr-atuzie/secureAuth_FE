@@ -1,16 +1,62 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaRegEyeSlash } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaRegUser } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
+import axios from "axios";
 
 const iconSize = 15;
 const Register = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    setLoading(true);
+
+    if (!name || !email || !password) {
+      setLoading(false);
+      return toast.error("Please enter all fields.");
+    }
+
+    if (password.length < 7) {
+      return toast.error("Password must be up to 7 characters");
+    }
+
+    try {
+      const { data } = await axios.post("/api/v1/users/register", {
+        name,
+        email,
+        password,
+      });
+
+      navigate("/verify-email");
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+      setLoading(false);
+
+      const message =
+        (error.response &&
+          error.response.data &&
+          error.response.data.message) ||
+        error.message ||
+        error.toString();
+
+      toast.error(message);
+    }
+  };
   return (
-    <div className=" w-full min-h-screen bg-gray-200 flex justify-center  items-center mx-auto ">
-      <div className="  w-[90%] lg:w-[456px] ">
+    <div className=" w-full min-h-screen bg-gray-200 flex justify-center  items-center ">
+      <div className="  w-[90%] lg:w-[456px]  mx-auto">
         <form
-          //   onSubmit={handleLogin}
+          onSubmit={handleSubmit}
           className=" bg-white w-full h-full border  p-5 lg:py-[32px] lg:px-[28px] shadow-md rounded-xl "
         >
           <h1 className=" text-[20px] lg:text-[28px] font-medium text-center">
@@ -35,6 +81,8 @@ const Register = () => {
                 type="text"
                 name="username"
                 id="username"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 // onChange={handleInputChange}
               />
               <FaRegUser size={iconSize} className=" text-gray-400 " />
@@ -56,6 +104,8 @@ const Register = () => {
                 type="email"
                 name="email"
                 id="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 // onChange={handleInputChange}
               />
               <MdOutlineEmail size={iconSize} className=" text-gray-400 " />
@@ -77,26 +127,26 @@ const Register = () => {
                 name="password"
                 id="password"
                 // onChange={handleInputChange}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
               />
               <FaRegEyeSlash size={iconSize} className=" text-gray-400" />
             </div>
           </div>
 
           <Link to={"/forgot-password"}>
-            <p className=" text-[#FF5D2E] text-right w-full my-2 text-sm font-semibold">
+            <p className=" text-[#FF5D2E] text-right w-full my-2 text-xs lg:text-sm font-medium">
               Forgot password?
             </p>
           </Link>
 
-          <Link to="/verify-email">
-            <button
-              // type="submit"
-              // onClick={() => navigate("/dashboard/main")}
-              className=" w-full mt-8 px-[24px] rounded-[12px] py-[12px] lg:py-[16px] font-semibold bg-[#FF5D2E]  text-white justify-center items-center flex gap-4"
-            >
-              Register
-            </button>
-          </Link>
+          <button
+            type="submit"
+            disabled={loading}
+            className=" disabled:opacity-45 w-full mt-8 px-[24px] rounded-[12px] py-[12px] lg:py-[16px] font-semibold bg-[#FF5D2E]  text-white justify-center items-center flex gap-4"
+          >
+            {loading ? "Loading" : "Register"}
+          </button>
 
           <Link to={"/login"}>
             <p className=" text-sm text-center  my-4">

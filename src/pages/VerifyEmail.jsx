@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import OtpInput from "otp-input-react";
 
 const VerifyEmail = () => {
+  const [OTP, setOTP] = useState("");
   return (
     <div className=" w-full min-h-screen bg-gray-200 flex justify-center  items-center mx-auto ">
       <div className=" h-[476px] bg-white w-[456px]  border shadow-md rounded-xl ">
@@ -22,12 +24,22 @@ const VerifyEmail = () => {
           "
           >
             <label
-              className=" tracking-wide capitalize text-xs lg:text-sm font-semibold "
+              className=" tracking-wide capitalize text-xs lg:text-sm  font-medium "
               htmlFor="code"
             >
-              Verification code
+              Enter verification code
             </label>
-            <div className=" bg-white w-full flex justify-center items-center border-2 border-[#FCB59A] p-3.5  rounded-md">
+            <OtpInput
+              value={OTP}
+              onChange={setOTP}
+              autoFocus
+              OTPLength={6}
+              otpType="alphanumeric"
+              disabled={false}
+              className="otp-container"
+            />
+
+            {/* <div className=" bg-white w-full flex justify-center items-center border-2 border-[#FCB59A] p-3.5  rounded-md">
               <input
                 className=" w-full outline-none border-none placeholder:font-normal placeholder:text-sm placeholder:text-gray-400 "
                 placeholder="Enter verification code"
@@ -35,7 +47,7 @@ const VerifyEmail = () => {
                 name="code"
                 id="code"
               />
-            </div>
+            </div> */}
           </div>
 
           <button
@@ -45,7 +57,7 @@ const VerifyEmail = () => {
             Login
           </button>
           <Link to={"/"}>
-            <p className=" text-gray-500  text-center w-full my-6 text-sm font-semibold">
+            <p className=" text-gray-500  text-center w-full my-6 text-sm font-medium">
               Didn't recieve email?{" "}
               <span className="text-[#FF6634] ml-1">Resend</span>
             </p>
