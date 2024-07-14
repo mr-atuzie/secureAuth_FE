@@ -4,9 +4,13 @@ import OtpInput from "otp-input-react";
 
 const VerifyEmail = () => {
   const [OTP, setOTP] = useState("");
+
+  const handleSubmit = () => {
+    console.log(OTP);
+  };
   return (
     <div className=" w-full min-h-screen bg-gray-200 flex justify-center  items-center mx-auto ">
-      <div className=" h-[476px] bg-white w-[456px]  border shadow-md rounded-xl ">
+      <div className=" lg:h-[476px] bg-white w-[90%] lg:w-[456px] mx-auto  border shadow-md rounded-xl ">
         <form className=" w-full h-full  py-[32px] px-[28px]  ">
           <h1 className=" font3 text-[20px] lg:text-[28px] font-medium text-center">
             Verify your Email
@@ -51,10 +55,10 @@ const VerifyEmail = () => {
           </div>
 
           <button
-            // onClick={() => navigate("/reset-email")}
+            onClick={handleSubmit}
             className=" w-full mt-10 px-[24px] rounded-[12px] py-[16px] font-semibold bg-[#FF5D2E]  text-white justify-center items-center flex gap-4"
           >
-            Login
+            Enter
           </button>
           <Link to={"/"}>
             <p className=" text-gray-500  text-center w-full my-6 text-sm font-medium">
