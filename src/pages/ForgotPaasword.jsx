@@ -6,9 +6,9 @@ const ForgotPaasword = () => {
   const navigate = useNavigate();
   return (
     <div className=" w-full min-h-screen bg-gray-200 flex justify-center  items-center mx-auto ">
-      <div className=" w-full h-full lg:h-[476px] bg-white lg:w-[456px]  border shadow-md rounded-xl ">
+      <div className=" w-full h-screen lg:h-[476px] bg-white lg:w-[456px]  border shadow-md rounded-xl ">
         <form className=" w-full h-full  py-[32px] px-[28px]  ">
-          <h1 className=" font3 text-[20px] lg:text-[28px] font-medium text-center">
+          <h1 className=" font3 text-[20px] lg:text-[28px] font-semibold text-center">
             Forgot Password
           </h1>
           <p className=" text-xs lg:text-base text-[#667185] text-center">
@@ -20,7 +20,7 @@ const ForgotPaasword = () => {
           "
           >
             <label
-              className=" tracking-wide capitalize text-xs lg:text-sm font-semibold "
+              className=" tracking-wide capitalize text-sm lg:text-sm font-semibold "
               htmlFor="email"
             >
               email
@@ -39,7 +39,7 @@ const ForgotPaasword = () => {
 
           <button
             onClick={() => navigate("/reset-password")}
-            className=" w-full mt-10 px-[24px] rounded-[12px] py-[16px] font-semibold bg-[#FF5D2E]  text-white justify-center items-center flex gap-4"
+            className=" w-full mt-10 px-[24px] rounded-[12px] py-[16px] font-medium bg-[#FF5D2E]  text-white justify-center items-center flex gap-4"
           >
             Send reset Instruction
           </button>

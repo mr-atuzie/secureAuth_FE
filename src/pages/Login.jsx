@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
-import { FaRegEyeSlash } from "react-icons/fa";
+import { FaEnvelope, FaRegEyeSlash } from "react-icons/fa";
 import { FaRegUser } from "react-icons/fa";
 
 import { Link, useNavigate } from "react-router-dom";
@@ -57,7 +57,7 @@ const Login = () => {
           onSubmit={handleSubmit}
           className="  w-full h-full border border-[#D0D5DD] p-5 lg:py-[32px] lg:px-[28px] shadow-md rounded-xl "
         >
-          <h1 className=" text-[20px] lg:text-[28px] font-medium text-center">
+          <h1 className=" text-[20px] lg:text-[28px] font-semibold text-center">
             Login your Account
           </h1>
           <p className=" text-xs lg:text-base text-[#667185] text-center">
@@ -67,7 +67,7 @@ const Login = () => {
           {/* email */}
           <div className=" flex flex-col gap-2 mt-4  lg:mt-6">
             <label
-              className=" tracking-wide capitalize text-xs lg:text-sm font-medium "
+              className=" tracking-wide capitalize text-sm lg:text-sm font-medium "
               htmlFor="emai"
             >
               Email
@@ -75,20 +75,20 @@ const Login = () => {
             <div className=" w-full flex -mt-1 justify-center items-center border-2 hover:border-[#FCB59A] border-[#D0D5DD] p-3.5  rounded-md">
               <input
                 className=" w-full h-full  border outline-none border-none  placeholder:font-normal placeholder:text-sm placeholder:text-gray-400 "
-                placeholder="Enter your Username"
+                placeholder="Enter your email address"
                 type="email"
                 name="email"
                 id="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-              <FaRegUser size={iconSize} className=" text-gray-400 " />
+              <FaEnvelope size={iconSize} className=" text-gray-300 " />
             </div>
           </div>
 
           <div className=" flex flex-col gap-2 mt-4 lg:mt-6">
             <label
-              className=" tracking-wide capitalize text-xs lg:text-sm font-medium "
+              className=" tracking-wide capitalize text-sm lg:text-sm font-medium "
               htmlFor="password"
             >
               Password
@@ -103,7 +103,7 @@ const Login = () => {
                 value={email}
                 onChange={(e) => setPassword(e.target.value)}
               />
-              <FaRegEyeSlash size={iconSize} className=" text-gray-400" />
+              <FaRegEyeSlash size={iconSize} className=" text-gray-300" />
             </div>
           </div>
 

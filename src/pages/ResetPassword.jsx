@@ -6,9 +6,9 @@ const ResetPassword = () => {
   const navigate = useNavigate();
   return (
     <div className=" w-full min-h-screen bg-[#F7F9FC] flex justify-center  items-center mx-auto ">
-      <div className=" lg:h-[476px] w-full h-full lg:w-[456px] bg-white border shadow-md rounded-xl ">
+      <div className=" lg:h-[476px] w-full h-screen lg:w-[456px] bg-white border shadow-md rounded-xl ">
         <form className=" w-full h-full  py-[32px] px-[28px]  ">
-          <h1 className=" font3 text-[20px] lg:text-[28px] font-medium text-center">
+          <h1 className=" font3 text-[20px] lg:text-[28px] font-semibold text-center">
             Reset Password
           </h1>
           <p className=" text-xs lg:text-base text-[#667185] text-center">
@@ -20,7 +20,7 @@ const ResetPassword = () => {
           "
           >
             <label
-              className=" tracking-wide capitalize text-xs lg:text-sm font-medium "
+              className=" tracking-wide capitalize text-sm lg:text-sm font-medium "
               htmlFor="password"
             >
               new password
@@ -42,7 +42,7 @@ const ResetPassword = () => {
           "
           >
             <label
-              className=" tracking-wide capitalize text-xs lg:text-sm font-medium "
+              className=" tracking-wide capitalize text-sm lg:text-sm font-medium "
               htmlFor="password"
             >
               confirm password
