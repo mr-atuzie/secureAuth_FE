@@ -57,7 +57,7 @@ const Register = () => {
       <div className="  w-full h-full lg:w-[456px]  mx-auto">
         <form
           onSubmit={handleSubmit}
-          className=" bg-white w-full h-full border  p-5 lg:py-[32px] lg:px-[28px] shadow-md rounded-xl "
+          className=" bg-white w-full h-full border  p-3 lg:py-[32px] lg:px-[28px] shadow-md rounded-xl "
         >
           <h1 className=" text-[20px] lg:text-[28px] font-medium text-center">
             Register Account
