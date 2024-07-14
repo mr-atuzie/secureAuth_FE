@@ -2,7 +2,6 @@ import axios from "axios";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 import { FaEnvelope, FaRegEyeSlash } from "react-icons/fa";
-import { FaRegUser } from "react-icons/fa";
 
 import { Link, useNavigate } from "react-router-dom";
 
