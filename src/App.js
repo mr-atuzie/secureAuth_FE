@@ -7,6 +7,7 @@ import Register from "./pages/Register";
 import VerifyEmail from "./pages/VerifyEmail";
 import { Toaster } from "react-hot-toast";
 import axios from "axios";
+import Dashboard from "./pages/Dashboard";
 
 axios.defaults.withCredentials = true;
 axios.defaults.baseURL = process.env.REACT_APP_BACKEND_URL;
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/verify-email" element={<VerifyEmail />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/forgot-password" element={<ForgotPaasword />} />
         <Route path="/reset-password" element={<ResetPassword />} />
       </Routes>

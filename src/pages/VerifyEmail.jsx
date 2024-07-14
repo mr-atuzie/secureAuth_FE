@@ -1,17 +1,54 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import OtpInput from "otp-input-react";
+import toast from "react-hot-toast";
+import axios from "axios";
 
 const VerifyEmail = () => {
   const [OTP, setOTP] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = () => {
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     console.log(OTP);
+
+    setLoading(true);
+
+    if (!OTP) {
+      setLoading(false);
+      return toast.error("Please enter all fields.");
+    }
+
+    try {
+      const { data } = await axios.post("/api/v1/users/verify-email", {
+        code: OTP,
+      });
+
+      navigate("/dashboard");
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+      setLoading(false);
+
+      const message =
+        (error.response &&
+          error.response.data &&
+          error.response.data.message) ||
+        error.message ||
+        error.toString();
+
+      toast.error(message);
+    }
   };
   return (
     <div className=" w-full min-h-screen bg-gray-200 flex justify-center  items-center mx-auto ">
       <div className=" lg:h-[476px] bg-white w-[95%] lg:w-[456px] mx-auto  border shadow-md rounded-xl ">
-        <form className=" w-full h-full  py-[32px] px-[28px]  ">
+        <form
+          onSubmit={handleSubmit}
+          className=" w-full h-full  py-[32px] px-[28px]  "
+        >
           <h1 className=" font3 text-[20px] lg:text-[28px] font-medium text-center">
             Verify your Email
           </h1>
@@ -55,17 +92,17 @@ const VerifyEmail = () => {
           </div>
 
           <button
-            onClick={handleSubmit}
-            className=" w-full mt-10 px-[24px] rounded-[12px] py-[16px] font-semibold bg-[#FF5D2E]  text-white justify-center items-center flex gap-4"
+            disabled={loading}
+            type="submit"
+            className=" disabled:opacity-50 w-full mt-10 px-[24px] rounded-[12px] py-[16px] font-semibold bg-[#FF5D2E]  text-white justify-center items-center flex gap-4"
           >
-            Enter
+            {loading ? "Loading" : "Enter"}
           </button>
-          <Link to={"/"}>
-            <p className=" text-gray-500  text-center w-full my-6 text-sm font-medium">
-              Didn't recieve email?{" "}
-              <span className="text-[#FF6634] ml-1">Resend</span>
-            </p>
-          </Link>
+
+          <button className=" text-gray-500  text-center w-full my-6 text-sm font-medium">
+            Didn't recieve email?{" "}
+            <span className="text-[#FF6634] ml-1">Resend</span>
+          </button>
         </form>
       </div>
     </div>

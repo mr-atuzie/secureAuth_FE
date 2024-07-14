@@ -53,8 +53,8 @@ const Register = () => {
     }
   };
   return (
-    <div className=" w-full min-h-screen bg-gray-200 flex justify-center  items-center ">
-      <div className="  w-[90%] lg:w-[456px]  mx-auto">
+    <div className=" w-full min-h-screen bg-gray-200 flex justify-center  lg:items-center ">
+      <div className="  w-[95%] lg:w-[456px]  mx-auto">
         <form
           onSubmit={handleSubmit}
           className=" bg-white w-full h-full border  p-5 lg:py-[32px] lg:px-[28px] shadow-md rounded-xl "
