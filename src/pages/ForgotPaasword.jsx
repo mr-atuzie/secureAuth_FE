@@ -44,7 +44,7 @@ const ForgotPaasword = () => {
             Send reset Instruction
           </button>
           <Link to={"/"}>
-            <p className=" text-gray-500  text-center w-full my-6 text-sm font-semibold">
+            <p className=" text-gray-500  text-center w-full my-6 text-sm font-medium">
               Remeber your password?{" "}
               <span className="text-[#FF6634] ml-1">Click here</span>
             </p>
