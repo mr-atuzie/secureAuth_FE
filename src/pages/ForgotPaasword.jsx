@@ -6,7 +6,7 @@ const ForgotPaasword = () => {
   const navigate = useNavigate();
   return (
     <div className=" w-full min-h-screen bg-gray-200 flex justify-center  items-center mx-auto ">
-      <div className=" h-[476px] bg-white w-[456px]  border shadow-md rounded-xl ">
+      <div className=" w-full h-full lg:h-[476px] bg-white lg:w-[456px]  border shadow-md rounded-xl ">
         <form className=" w-full h-full  py-[32px] px-[28px]  ">
           <h1 className=" font3 text-[20px] lg:text-[28px] font-medium text-center">
             Forgot Password

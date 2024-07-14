@@ -44,7 +44,7 @@ const VerifyEmail = () => {
   };
   return (
     <div className=" w-full min-h-screen bg-gray-200 flex justify-center  items-center mx-auto ">
-      <div className=" lg:h-[476px] bg-white w-[95%] lg:w-[456px] mx-auto  border shadow-md rounded-xl ">
+      <div className=" lg:h-[476px] bg-white w-full h-full lg:w-[456px] mx-auto  border shadow-md rounded-xl ">
         <form
           onSubmit={handleSubmit}
           className=" w-full h-full  py-[32px] px-[28px]  "
