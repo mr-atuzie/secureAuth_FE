@@ -51,11 +51,11 @@ const Login = () => {
     }
   };
   return (
-    <div className=" w-full min-h-screen bg-gray-200 flex lg:justify-center  lg:items-center mx-auto ">
-      <div className="  w-full h-full lg:w-[456px] ">
+    <div className=" w-full min-h-screen bg-gray-200 flex lg:justify-center  lg:items-center lg:mx-auto ">
+      <div className="bg-white  w-full h-screen lg:h-fit lg:w-[456px] ">
         <form
           onSubmit={handleSubmit}
-          className=" bg-white w-full h-full border border-[#D0D5DD] p-5 lg:py-[32px] lg:px-[28px] shadow-md rounded-xl "
+          className="  w-full h-full border border-[#D0D5DD] p-5 lg:py-[32px] lg:px-[28px] shadow-md rounded-xl "
         >
           <h1 className=" text-[20px] lg:text-[28px] font-medium text-center">
             Login your Account

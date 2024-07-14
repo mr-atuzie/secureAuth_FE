@@ -54,22 +54,22 @@ const Register = () => {
   };
   return (
     <div className=" w-full min-h-screen bg-gray-200 flex justify-center  lg:items-center ">
-      <div className="  w-full h-full lg:w-[456px]  mx-auto">
+      <div className="  w-full h-screen lg:h-fit lg:w-[456px]  mx-auto">
         <form
           onSubmit={handleSubmit}
-          className=" bg-white w-full h-full border  p-3 lg:py-[32px] lg:px-[28px] shadow-md rounded-xl "
+          className=" bg-white w-full h-full border  p-5 lg:py-[32px] lg:px-[28px] shadow-md rounded-xl "
         >
-          <h1 className=" text-[20px] lg:text-[28px] font-medium text-center">
+          <h1 className=" text-[20px] lg:text-[28px] font-semibold text-center">
             Register Account
           </h1>
-          <p className=" text-xs lg:text-base text-[#667185] text-center">
+          <p className=" text-sm lg:text-base text-[#667185] text-center">
             Enter your credentials to access your dashboard
           </p>
 
           {/* username */}
           <div className=" flex flex-col gap-2 mt-4  lg:mt-6">
             <label
-              className=" tracking-wide capitalize text-xs lg:text-sm font-medium "
+              className=" tracking-wide capitalize text-sm lg:text-sm font-medium "
               htmlFor="username"
             >
               Username
@@ -85,14 +85,14 @@ const Register = () => {
                 onChange={(e) => setName(e.target.value)}
                 // onChange={handleInputChange}
               />
-              <FaRegUser size={iconSize} className=" text-gray-400 " />
+              <FaRegUser size={iconSize} className=" text-gray-300 " />
             </div>
           </div>
 
           {/* email */}
           <div className=" flex flex-col gap-2 mt-4 lg:mt-6">
             <label
-              className=" tracking-wide capitalize text-xs lg:text-sm font-medium "
+              className=" tracking-wide capitalize text-sm lg:text-sm font-medium "
               htmlFor="email"
             >
               email
@@ -108,13 +108,13 @@ const Register = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 // onChange={handleInputChange}
               />
-              <MdOutlineEmail size={iconSize} className=" text-gray-400 " />
+              <MdOutlineEmail size={iconSize} className=" text-gray-300 " />
             </div>
           </div>
 
           <div className=" flex flex-col gap-2 mt-4 lg:mt-6">
             <label
-              className=" tracking-wide capitalize text-xs lg:text-sm font-medium "
+              className=" tracking-wide capitalize text-sm lg:text-sm font-medium "
               htmlFor="password"
             >
               Password
@@ -130,7 +130,7 @@ const Register = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
-              <FaRegEyeSlash size={iconSize} className=" text-gray-400" />
+              <FaRegEyeSlash size={iconSize} className=" text-gray-300" />
             </div>
           </div>
 
