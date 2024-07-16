@@ -99,7 +99,7 @@ const Login = () => {
                 type="password"
                 name="password"
                 id="password"
-                value={email}
+                value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
               <FaRegEyeSlash size={iconSize} className=" text-gray-300" />
