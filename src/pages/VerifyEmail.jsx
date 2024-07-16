@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import OtpInput from "otp-input-react";
+// import OtpInput from "otp-input-react";
 import toast from "react-hot-toast";
 import axios from "axios";
 
@@ -10,9 +10,10 @@ const VerifyEmail = () => {
 
   const navigate = useNavigate();
 
+  const sentTo = sessionStorage.getItem("lastname");
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(OTP);
 
     setLoading(true);
 
@@ -42,6 +43,7 @@ const VerifyEmail = () => {
       toast.error(message);
     }
   };
+
   return (
     <div className=" w-full min-h-screen bg-gray-200 flex justify-center  items-center mx-auto ">
       <div className=" lg:h-[476px] bg-white w-full h-screen lg:w-[456px] mx-auto  border shadow-md rounded-xl ">
@@ -54,9 +56,7 @@ const VerifyEmail = () => {
           </h1>
           <p className=" text-xs lg:text-base text-[#667185] text-center">
             We sent a code to{" "}
-            <span className=" text-[#FF5D2E] font-medium">
-              (crackwxll@gmail.com)
-            </span>
+            <span className=" text-[#FF5D2E] font-medium">({sentTo})</span>
             ,Enter code to continue
           </p>
 
@@ -65,12 +65,12 @@ const VerifyEmail = () => {
           "
           >
             <label
-              className=" tracking-wide text-center capitalize text-xs lg:text-sm  font-medium "
+              className=" tracking-wide text-center capitalize text-sm lg:text-sm  font-medium "
               htmlFor="code"
             >
               Enter verification code
             </label>
-            <OtpInput
+            {/* <OtpInput
               value={OTP}
               onChange={setOTP}
               autoFocus
@@ -78,17 +78,19 @@ const VerifyEmail = () => {
               otpType="alphanumeric"
               disabled={false}
               className="otp-container"
-            />
+            /> */}
 
-            {/* <div className=" bg-white w-full flex justify-center items-center border-2 border-[#FCB59A] p-3.5  rounded-md">
+            <div className=" w-full flex -mt-1 justify-center items-center border-2 hover:border-[#FCB59A] border-[#D0D5DD] p-3.5  rounded-md">
               <input
                 className=" w-full outline-none border-none placeholder:font-normal placeholder:text-sm placeholder:text-gray-400 "
                 placeholder="Enter verification code"
                 type="text"
                 name="code"
                 id="code"
+                value={OTP}
+                onChange={(e) => setOTP(e.target.value)}
               />
-            </div> */}
+            </div>
           </div>
 
           <button

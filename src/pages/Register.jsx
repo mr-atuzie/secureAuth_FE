@@ -37,6 +37,8 @@ const Register = () => {
         password,
       });
 
+      sessionStorage.setItem("sentTo", email);
+
       navigate("/verify-email");
       console.log(data);
     } catch (error) {

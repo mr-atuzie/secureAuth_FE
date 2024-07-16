@@ -33,6 +33,8 @@ const Login = () => {
         password,
       });
 
+      sessionStorage.setItem("sentTo", email);
+
       navigate("/verify-email");
     } catch (error) {
       console.log(error);
