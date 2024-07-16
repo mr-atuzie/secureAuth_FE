@@ -17,6 +17,7 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log(process.env.REACT_APP_BACKEND_URL);
 
     setLoading(true);
 

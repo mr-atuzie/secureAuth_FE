@@ -9,8 +9,8 @@ import { Toaster } from "react-hot-toast";
 import axios from "axios";
 import Dashboard from "./pages/Dashboard";
 
-axios.defaults.withCredentials = true;
 axios.defaults.baseURL = process.env.REACT_APP_BACKEND_URL;
+axios.defaults.withCredentials = true;
 function App() {
   return (
     <BrowserRouter>
