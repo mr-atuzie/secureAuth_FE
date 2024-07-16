@@ -44,10 +44,10 @@ const VerifyEmail = () => {
   };
   return (
     <div className=" w-full min-h-screen bg-gray-200 flex justify-center  items-center mx-auto ">
-      <div className=" lg:h-[476px] bg-white w-full h-full lg:w-[456px] mx-auto  border shadow-md rounded-xl ">
+      <div className=" lg:h-[476px] bg-white w-full h-screen lg:w-[456px] mx-auto  border shadow-md rounded-xl ">
         <form
           onSubmit={handleSubmit}
-          className=" w-full h-full  py-[32px] px-[28px]  "
+          className=" w-full h-full py-5  lg:py-[32px] lg:px-[28px]  "
         >
           <h1 className=" font3 text-[20px] lg:text-[28px] font-medium text-center">
             Verify your Email
