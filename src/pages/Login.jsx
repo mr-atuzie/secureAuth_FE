@@ -28,13 +28,12 @@ const Login = () => {
     }
 
     try {
-      const { data } = await axios.post("/api/v1/users/login", {
+      await axios.post("/api/v1/users/login", {
         email,
         password,
       });
 
       navigate("/verify-email");
-      console.log(data);
     } catch (error) {
       console.log(error);
       setLoading(false);

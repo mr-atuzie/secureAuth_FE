@@ -30,7 +30,7 @@ const ForgotPaasword = () => {
       if (data) {
         setSent(true);
       }
-      console.log(data);
+
       // navigate("/reset-password");
     } catch (error) {
       console.log(error);
