@@ -44,6 +44,27 @@ const VerifyEmail = () => {
     }
   };
 
+  const resend = async (e) => {
+    setLoading(true);
+    try {
+      await axios.get("/api/v1/users/resend");
+      toast.success("Your verification code has been resent");
+      setLoading(false);
+    } catch (error) {
+      console.log(error);
+      setLoading(false);
+
+      const message =
+        (error.response &&
+          error.response.data &&
+          error.response.data.message) ||
+        error.message ||
+        error.toString();
+
+      toast.error(message);
+    }
+  };
+
   return (
     <div className=" w-full min-h-screen bg-gray-200 flex justify-center  items-center mx-auto ">
       <div className=" lg:h-[476px] bg-white w-full h-screen lg:w-[456px] mx-auto  border shadow-md rounded-xl ">
@@ -100,8 +121,11 @@ const VerifyEmail = () => {
           >
             {loading ? "Loading" : "Enter"}
           </button>
-
-          <button className=" text-gray-500  text-center w-full my-6 text-sm font-medium">
+          <button
+            type="button"
+            onClick={resend}
+            className=" text-gray-500  text-center w-full my-6 text-sm font-medium"
+          >
             Didn't recieve email?{" "}
             <span className="text-[#FF6634] ml-1">Resend</span>
           </button>
