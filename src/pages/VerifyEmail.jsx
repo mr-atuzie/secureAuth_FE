@@ -10,7 +10,7 @@ const VerifyEmail = () => {
 
   const navigate = useNavigate();
 
-  const sentTo = sessionStorage.getItem("lastname");
+  const sentTo = sessionStorage.getItem("sentTo");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -83,7 +83,7 @@ const VerifyEmail = () => {
             <div className=" w-full flex -mt-1 justify-center items-center border-2 hover:border-[#FCB59A] border-[#D0D5DD] p-3.5  rounded-md">
               <input
                 className=" w-full outline-none border-none placeholder:font-normal placeholder:text-sm placeholder:text-gray-400 "
-                placeholder="Enter verification code"
+                // placeholder="Enter verification code"
                 type="text"
                 name="code"
                 id="code"
