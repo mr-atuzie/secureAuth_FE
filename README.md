@@ -31,7 +31,7 @@ Using NPM:
 ```bash
 # Install dependencies
 $ npm install
-
+```
 ---
 
 ## Demo
