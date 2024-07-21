@@ -7,6 +7,33 @@ is a authentication platform designed to implement Two-Factor Authentication (2F
 - Secure storage of user credentials and 2FA secrets
 - Integration with backend for user management and token verification
 
+## How To Use 🔧
+
+From your command line, first clone Dopefolio:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/rammcodes/dopefolio
+
+# Go into the repository
+$ cd dopefolio
+
+# Remove current origin repository
+$ git remote remove origin
+```
+
+<br/>
+
+Then you can install the dependencies
+
+Using NPM:
+
+```bash
+# Install dependencies
+$ npm install
+
+---
+
 ## Demo
 [https://2fa-form.netlify.app](https://2fa-form.netlify.app)
 
