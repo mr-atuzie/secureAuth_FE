@@ -51,10 +51,10 @@ $ npm run start
 Backend Repository: [https://github.com/mr-atuzie/secureAuth_BE](https://github.com/mr-atuzie/secureAuth_BE)
 
 ## Usage
--Open your browser and navigate to http://localhost:3000.
--Log in using your credentials.
--Upon successful login, you will be prompted to enter a 2FA code sent to your mobile device or email.
--Enter the 2FA code to gain access to your account.
+- Open your browser and navigate to http://localhost:3000.
+- Log in using your credentials.
+- Upon successful login, you will be prompted to enter a 2FA code sent to your mobile device or email.
+- Enter the 2FA code to gain access to your account.
 
 ## Demo
 [https://2fa-form.netlify.app](https://2fa-form.netlify.app)
