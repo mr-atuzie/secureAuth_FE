@@ -9,18 +9,21 @@ is a authentication platform designed to implement Two-Factor Authentication (2F
 - Password management system for Forgot and reset password
 
 ## Technologies Used
-### Frontend - 
+### Frontend 
 - React
 - Redux for state management
 - Tailwind CSS for styling
-- Axios for API calls
 
 ### Backend
 - Node js
 - Express js
-- MongoDB
-- Nodemailer
 
+### Database
+- MongoDB
+  
+## Installation
+
+### Prerequisites
 
 ## How To Use 🔧
 
