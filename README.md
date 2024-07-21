@@ -25,6 +25,7 @@ is a authentication platform designed to implement Two-Factor Authentication (2F
 ### Prerequisites
 - Node.js and npm installed
 
+From your command line, first clone SecureAuth:
 ### 
 ```bash
 # Clone this repository
