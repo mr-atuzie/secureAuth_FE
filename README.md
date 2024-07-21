@@ -36,6 +36,7 @@ $ npm install
 ```
 
 ### Set up environment variables:
+Ensure your backend server is running
 ```bash
 REACT_APP_BACKEND_URL=your_backend_url
 ```
@@ -44,7 +45,7 @@ REACT_APP_BACKEND_URL=your_backend_url
 ```bash
 $ npm run start
 ```
-## Related Repositories
+## Related Repositories 
 Backend Repository: [https://github.com/mr-atuzie/secureAuth_BE](https://github.com/mr-atuzie/secureAuth_BE)
 
 ## Usage
