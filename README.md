@@ -22,20 +22,24 @@ is a authentication platform designed to implement Two-Factor Authentication (2F
 - MongoDB
   
 ## Installation
-### Clone this repository:
-```bash
-$ git clone https://github.com/mr-atuzie/secureAuth_FE
-$ cd secureAuth_FE
-```
+### Prerequisites
+- Node.js and npm installed
 
-### Install dependencies:
+### 
 ```bash
+# Clone this repository
+$ git clone https://github.com/mr-atuzie/secureAuth_FE
+
+# Go into the repository
+$ cd secureAuth_FE
+
+# Install dependencies
 $ npm install
 ```
 
 ### Set up environment variables:
 ```bash
-REACT_APP_BACKEND_URI=your_mongodb_uri
+REACT_APP_BACKEND_URL=your_backend_url
 ```
 
 ### Start the development severs
