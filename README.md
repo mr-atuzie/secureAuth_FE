@@ -22,8 +22,18 @@ is a authentication platform designed to implement Two-Factor Authentication (2F
 - MongoDB
   
 ## Installation
+### Clone the repository
+```bash
+# Clone this repository
+$ git clone https://github.com/rammcodes/dopefolio
 
-### Prerequisites
+# Go into the repository
+$ cd dopefolio
+
+# Remove current origin repository
+$ git remote remove origin
+```
+
 
 ## How To Use 🔧
 
