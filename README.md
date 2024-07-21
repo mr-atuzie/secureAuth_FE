@@ -22,16 +22,18 @@ is a authentication platform designed to implement Two-Factor Authentication (2F
 - MongoDB
   
 ## Installation
-### Clone the repository
 ```bash
 # Clone this repository
-$ git clone https://github.com/rammcodes/dopefolio
+$ git clone https://github.com/mr-atuzie/secureAuth_FE
 
 # Go into the repository
-$ cd dopefolio
+$ cd secureAuth_FE
 
-# Remove current origin repository
-$ git remote remove origin
+# Install dependencies
+$ npm install
+
+# Start the development severs
+$ npm run start
 ```
 
 
