@@ -25,13 +25,16 @@ is a authentication platform designed to implement Two-Factor Authentication (2F
 ```bash
 # Clone this repository
 $ git clone https://github.com/mr-atuzie/secureAuth_FE
-
+```
+```bash
 # Go into the repository
 $ cd secureAuth_FE
-
+```
+```bash
 # Install dependencies
 $ npm install
-
+```
+```bash
 # Start the development severs
 $ npm run start
 ```
