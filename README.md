@@ -14,12 +14,9 @@ is a authentication platform designed to implement Two-Factor Authentication (2F
 - Redux for state management
 - Tailwind CSS for styling
 
-### Backend
-- Node js
-- Express js
-
-### Database
-- MongoDB
+### Libaries
+- React-router-dom
+- Axios
   
 ## Installation
 ### Prerequisites
