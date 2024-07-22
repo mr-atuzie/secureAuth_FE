@@ -1,3 +1,14 @@
+## Table of Contents
+- Introduction
+- Features
+- Technologies Used.
+- Installation
+- Environment Variables
+- Usage
+- Demo
+- Contributing
+- Author
+
 ## Secure Auth - 2FA with email - User Interace
 is a authentication platform designed to implement Two-Factor Authentication (2FA) using email.It provides a authentication mechanism that enhances security by requiring users to verify their identity through a code sent to their email and also Password Management system for Forget and Reset Password.
 
