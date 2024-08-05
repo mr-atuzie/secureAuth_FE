@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-// import OtpInput from "otp-input-react";
+import OtpInput from "otp-input-react";
 import toast from "react-hot-toast";
 import axios from "axios";
 
@@ -91,27 +91,27 @@ const VerifyEmail = () => {
             >
               Enter verification code
             </label>
-            {/* <OtpInput
+            <OtpInput
               value={OTP}
               onChange={setOTP}
               autoFocus
-              OTPLength={6}
-              otpType="alphanumeric"
+              OTPLength={7}
+              otpType=""
               disabled={false}
               className="otp-container"
-            /> */}
+            />
 
-            <div className=" w-full flex -mt-1 justify-center items-center border-2 hover:border-[#FCB59A] border-[#D0D5DD] p-3.5  rounded-md">
+            {/* <div className=" w-full flex -mt-1 justify-center items-center border-2 hover:border-[#FCB59A] border-[#D0D5DD] p-3.5  rounded-md">
               <input
                 className=" w-full outline-none border-none placeholder:font-normal placeholder:text-sm placeholder:text-gray-400 "
-                // placeholder="Enter verification code"
+                placeholder="Enter verification code"
                 type="text"
                 name="code"
                 id="code"
                 value={OTP}
                 onChange={(e) => setOTP(e.target.value)}
               />
-            </div>
+            </div> */}
           </div>
 
           <button
