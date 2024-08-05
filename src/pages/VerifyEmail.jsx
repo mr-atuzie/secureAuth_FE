@@ -96,7 +96,7 @@ const VerifyEmail = () => {
               onChange={setOTP}
               autoFocus
               OTPLength={7}
-              otpType=""
+              otpType="any"
               disabled={false}
               className="otp-container"
             />
