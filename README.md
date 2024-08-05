@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+## Table of Contents
+- Introduction
+- Features
+- Technologies Used.
+- Installation
+- Environment Variables
+- Usage
+- Demo
+- Contributing
+- Author
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Secure Auth - 2FA with email - User Interace
+is a authentication platform designed to implement Two-Factor Authentication (2FA) using email.It provides a authentication mechanism that enhances security by requiring users to verify their identity through a code sent to their email and also Password Management system for Forget and Reset Password.
 
-## Available Scripts
+## Features
+- **User Authentication:** Secure user login and registration with JWT-based authentication, Password hashing and salting.
+- **2FA with email:** Sending a unique verification code to the user's email during login.
+- **Password management system:** Send one-time token  for Forgot and reset password.
+- **Responsive Design:** Fully responsive design ensuring a smooth experience on both desktop and mobile devices.
 
-In the project directory, you can run:
+## Technologies Used
+### Frontend 
+- React
+- Redux for state management
+- Tailwind CSS for styling
 
-### `npm start`
+### Libaries
+- React-router-dom
+- Axios
+  
+## Installation
+### Prerequisites
+- Node.js and npm installed
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+From your command line, first clone SecureAuth:
+### 
+```bash
+# Clone this repository
+$ git clone https://github.com/mr-atuzie/secureAuth_FE
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Go into the repository
+$ cd secureAuth_FE
 
-### `npm test`
+# Install dependencies
+$ npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Set up environment variables:
+Ensure your backend server is running
+```bash
+REACT_APP_BACKEND_URL=your_backend_url
+```
 
-### `npm run build`
+### Start the development severs
+```bash
+$ npm run start
+```
+## Related Repositories 
+Backend Repository: [https://github.com/mr-atuzie/secureAuth_BE](https://github.com/mr-atuzie/secureAuth_BE)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
+- Open your browser and navigate to http://localhost:3000.
+- Log in using your credentials.
+- Upon successful login, you will be prompted to enter a 2FA code sent to your mobile device or email.
+- Enter the 2FA code to gain access to your account.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Demo
+[https://2fa-form.netlify.app](https://2fa-form.netlify.app)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contributions
+Steps to Contribute
+### 1-Fork the repository
+Click on the "Fork" button at the top right of the repository page to create a copy of this repository under your own GitHub account.
 
-### `npm run eject`
+### 2-Clone your forked repository
+```bash
+$ git clone https://github.com/yourusername/react-2fa-frontend.git
+$ cd secureAuth_FE
+```
+### 3-Create a new branch:
+```bash
+$ git checkout -b feature/your-feature-name
+```
+### 4-Make your changes
+Make the necessary changes or additions to the codebase.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 5-Commit your changes
+```bash
+$ git add .
+$ git commit -m "Add feature: description of the feature"
+```
+### 6-Push your changes to your forked repository
+```bash
+$git push origin feature/your-feature-name
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 7-Create a pull request
+- Go to the original repository on GitHub and you should see a prompt to create a pull request from your new branch. Follow the instructions to open a pull request.
+- Ensure your pull request description clearly explains the changes and why they are necessary.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 8-Review process
+- Your pull request will be reviewed by the project maintainers. You might be asked to make some changes before it gets merged.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Author 👨‍💻
+- **Rex Atuzie** - **[Linkedin](www.linkedin.com/in/rex-atuzie-0ab67820)**, **[Twitter](https://twitter.com/AtuzieR)**, **[Github](https://github.com/mr-atuzie)**, **[Portfolio](https://rexatuzie.netlify.app)**  
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
